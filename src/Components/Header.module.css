@@ -1,0 +1,52 @@
+/* css code for fixed header */
+.mainHeaderdiv {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+  height: 10vh;
+  /* css code for transparent black background*/
+    background-color: rgba(0, 0, 0, 0.3);
+}
+.mainHeaderdivflex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+.mainHeaderdivflexdiv1{
+    width: 30%;
+}
+.mainHeaderdivflexdiv2{
+    width: 30%;
+}
+.mainHeaderdivmenu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+.mainHeaderdivmenu a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 500;
+    padding: 0 1rem;
+    opacity: 0.8;
+    font-family: 'Montserrat', sans-serif;
+}
+.mainHeaderdivmenu a:after{
+    content: '';
+    display: block;
+    width: 0%;
+    height: 2px;
+    background: #fff;
+    transition: width 0.3s;
+}
+.mainHeaderdivmenu a:hover::after{
+    width: 100%;
+    transition: width 0.3s;
+}
+
