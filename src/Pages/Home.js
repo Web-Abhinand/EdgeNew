@@ -66,7 +66,7 @@ const Home = () => {
                     </div>
                     <div className={styles.how_Amrita_edge_helps_you_right_div}>
                         <div className={styles.how_img_div}>
-                            <img src={HowHelp} alt="how amrita edge helps you" className={styles.how_img}></img>
+                            <img src={HowHelp} alt="how amrita edge helps you" className={styles.how_img} style={{height:'100%'}}></img>
                         </div>
                     </div>
                 </div>

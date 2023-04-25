@@ -109,3 +109,9 @@
     background-repeat: no-repeat;
     padding-top: 1px;
 }
+.aboutOurInspiration_flex_left2{
+    width: 45%;
+}
+.aboutOurInspiration_flex_left2 img{
+    width: 100%;
+}

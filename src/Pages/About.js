@@ -68,7 +68,7 @@ const About = () => {
               &emsp; For more information, visit <a href="https://www.amrita.edu/about" style={{ color: '#E80100' }}>www.amrita.edu/about</a>
               </p>
           </div>
-          <div className={styles.aboutOurInspiration_flex_left}>
+          <div className={styles.aboutOurInspiration_flex_left2}>
             <img src={College} alt='amrita vishwa vidyapeetham'></img>
           </div>
         </div>
