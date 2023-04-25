@@ -20,11 +20,11 @@
     width: 30%;
 }
 .mainHeaderdivflexdiv2{
-    width: 30%;
+    width: 40%;
 }
 .mainHeaderdivmenu{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     width: 100%;
 }
