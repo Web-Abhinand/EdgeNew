@@ -37,11 +37,3 @@
     transform: rotate(360deg);
   }
 }
-.css-46bh2p-MuiCardContent-root{
-  max-height: 200px !important;
-  overflow-y: scroll !important;
-}
-.css-46bh2p-MuiCardContent-root::-webkit-scrollbar {
-  width: 2px;
-  height: 5px;
-}

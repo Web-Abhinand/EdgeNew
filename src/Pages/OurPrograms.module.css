@@ -13,11 +13,12 @@
     width: 23%;
     margin-bottom: 2rem;
 }
-.MuiCardContent-root {
-    max-height: 100px !important;
-    overflow-y: hidden;
-}
-.css-46bh2p-MuiCardContent-root{
-    max-height: 100px !important;
-    overflow-y: hidden;
-}
+
+ .cardContent::-webkit-scrollbar {
+    width: 2px;
+    height: 5px;
+  }
+  .cardContent{
+    max-height: 200px !important;
+    overflow-y: scroll !important;
+  }
