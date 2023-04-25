@@ -189,7 +189,7 @@ const OurPrograms = () => {
                 <CardMedia
                   component="img"
                   style={{ height: '350px' }}
-                  image={ntse_logo}
+                  image={ias}
                   alt="green iguana"
                 />
                 <CardContent>
