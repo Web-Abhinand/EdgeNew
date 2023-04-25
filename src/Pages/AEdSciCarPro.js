@@ -13,7 +13,7 @@ function AEdSciCarPro() {
             <div className={styles.main_neet_rep_flex}>
                 <div className={styles.main_neet_rep_left_div}>
                     <div className={styles.main_neet_rep_left_div_text}>
-                        <h1 className='pt-2 text-4xl font-medium leading-tight text-primary' style={{ color: '#BC631C', fontFamily: 'Source Sans Pro',margin:'0',paddingBottom:'1rem',textAlign:'left'}}>Amrita Integrated Mentors (AIM) Program</h1>
+                        <h1 className='pt-2 text-4xl font-medium leading-tight text-primary' style={{ color: '#BC631C', fontFamily: 'Source Sans Pro',margin:'0',paddingBottom:'1rem',textAlign:'left'}}>Amrita Edge Science & Career Foundation Program</h1>
                         <p>&emsp;Excellence in Academics is the demonstrated ability to perform, achieve, and/or excel in scholastic activities. Academic excellence has been identified with achieving high grades and superior performance. But academic excellence is more than just getting good grades. It is the maximum development of your intellectual capacities and skills in service to humanity. Achieving academic excellence is a process of both formal and informal education. Indeed, education is a limitless and unending process to be enjoyed for a lifetime. </p>
                     </div>
                 </div>
