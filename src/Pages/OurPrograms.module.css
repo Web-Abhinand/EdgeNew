@@ -22,3 +22,6 @@
     max-height: 200px !important;
     overflow-y: scroll !important;
   }
+  .home_card_section_flex div img{
+    object-fit: contain;
+  }
