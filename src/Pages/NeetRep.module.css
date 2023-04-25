@@ -1,0 +1,52 @@
+.main_neet_rep{
+    width: 100%;
+    /* height: 80vh; */
+    margin-top: 12vh;
+}
+.main_neet_rep_flex{
+    display: flex;
+    width: 80%;
+    margin: 0 auto;
+}
+.main_neet_rep_left_div{
+    flex: 1 1 50%;
+}
+.main_neet_rep_right_div{
+    flex: 1 1 50%;
+}
+.main_neet_rep_flex p{
+    font-family: 'Montserrat', sans-serif;
+    text-align: justify;
+    width: 90%;
+    line-height: 2rem;
+}
+.main_neet_rep_right_div img{
+    height: 400px;
+    object-fit: contain;
+    width: 100%;
+}
+.details_neet_rep{
+    width: 100%;
+}
+.details_neet_rep_inner{
+    width: 80%;
+    margin: 0 auto;
+    padding-bottom: 1rem;
+}
+.details_neet_rep_inner ul li{
+    margin-bottom: 1rem;
+    width: 60%;
+    text-align: justify;
+    line-height: 2rem;
+    list-style-position: outside;
+    font-family: 'Montserrat';
+}
+.details_neet_rep_inner ul li::marker{
+    content: '\2714';
+    font-size: 1.5rem;
+}
+.details_neet_rep_inner ul li:hover{
+    text-shadow: 1px 0px 0px rgb(187, 187, 187);
+    transition: 0.5s;
+    cursor: pointer;
+}

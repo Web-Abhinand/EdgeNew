@@ -1,0 +1,23 @@
+.home_card_section{
+    width: 100%;
+    padding: 5rem;
+}
+.home_card_section_flex{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    margin: 0 auto;
+}
+.home_card_section_flex > div{
+    width: 23%;
+    margin-bottom: 2rem;
+}
+.MuiCardContent-root {
+    max-height: 100px !important;
+    overflow-y: hidden;
+}
+.css-46bh2p-MuiCardContent-root{
+    max-height: 100px !important;
+    overflow-y: hidden;
+}
