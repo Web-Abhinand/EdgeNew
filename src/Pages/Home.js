@@ -54,7 +54,7 @@ const Home = () => {
             </div>
             <div className={styles.how_Amrita_edge_helps_you}>
                 <div className={styles.how_Amrita_edge_helps_you_inner_div}>
-                    <div className={styles.how_Amrita_edge_helps_you_left_div}>
+                    <div className={styles.how_Amrita_edge_helps_you_left_div}style={{paddingBottom:'1rem'}}>
                         <h1 className='mb-5 py-2 text-5xl font-medium leading-tight text-primary' style={{ color: '#BC631C', fontFamily: 'Source Sans Pro'}}>Amrita Edge</h1>
                         <p>&emsp;Amrita Edge is an Initiative of Amrita VishwaVidyapeetham which focuses on an all-rounded individualised learning trajectory to enhance and diversify students' career growth pathways while integrating Amrita's philosophy of 'Education for Life and Education for Living'.</p>
                         <p>
