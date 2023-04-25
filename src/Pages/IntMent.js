@@ -5,7 +5,11 @@ import Header from '../Components/Header'
 import Footer from '../Components/Footer'
 import styles from './intMent.module.css'
 import Bullet from '../Assets/bullet.png'
+import { useEffect } from 'react'
 function IntMent() {
+    useEffect(() => {
+        window.scroll(0, 0);
+      }, []);
   return (
     <>
         <Header />

@@ -26,7 +26,11 @@ import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import { Link } from 'react-router-dom';
 import Footer from '../Components/Footer';
+import { useEffect } from 'react'
 const OurPrograms = () => {
+  useEffect(() => {
+    window.scroll(0, 0);
+  }, []);
   return (
     <>
       <Header />

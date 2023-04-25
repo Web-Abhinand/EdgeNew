@@ -5,7 +5,11 @@ import Header from '../Components/Header'
 import Footer from '../Components/Footer'
 import styles from './intMent.module.css'
 import sci_car_found from '../Assets/science-and-carrer-found.jpg'
+import { useEffect } from 'react'
 function AEdSciCarPro() {
+    useEffect(() => {
+        window.scroll(0, 0);
+      }, []);
   return (
     <>
         <Header />

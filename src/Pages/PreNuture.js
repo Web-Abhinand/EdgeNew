@@ -6,7 +6,11 @@ import Footer from '../Components/Footer'
 import styles from './intMent.module.css'
 import pre_nurture from '../Assets/pre-nurture.jpg'
 import Bullet from '../Assets/bullet.png'
+import { useEffect } from 'react'
 function PreNuture() {
+    useEffect(() => {
+        window.scroll(0, 0);
+      }, []);
   return (
     <>
         <Header />

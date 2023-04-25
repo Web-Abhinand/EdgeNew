@@ -18,7 +18,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
-
+import { useEffect } from 'react'
 
 
 // import required modules
@@ -27,6 +27,9 @@ import { Autoplay, Pagination, Parallax } from 'swiper';
 
 
 const Home = () => {
+    useEffect(() => {
+        window.scroll(0, 0);
+      }, []);
     // const progressCircle = useRef(null);
     // const progressContent = useRef(null);
     // const onAutoplayTimeLeft = (s, time, progress) => {

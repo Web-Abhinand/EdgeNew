@@ -6,7 +6,11 @@ import Footer from '../Components/Footer'
 import styles from './intMent.module.css'
 import person_wavin_flag from '../Assets/hands-waving-flags-india.jpg'
 import Bullet from '../Assets/bullet.png'
+import { useEffect } from 'react'
 function CivilServFound() {
+    useEffect(() => {
+        window.scroll(0, 0);
+      }, []);
   return (
     <>
         <Header />

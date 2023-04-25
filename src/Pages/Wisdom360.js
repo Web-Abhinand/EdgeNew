@@ -5,7 +5,11 @@ import Header from '../Components/Header'
 import Footer from '../Components/Footer'
 import styles from './intMent.module.css'
 import ias from '../Assets/1.webp'
+import { useEffect } from 'react'
 function Wisdom360() {
+    useEffect(() => {
+        window.scroll(0, 0);
+      }, []);
   return (
     <>
         <Header />

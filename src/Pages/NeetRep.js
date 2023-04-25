@@ -5,7 +5,11 @@ import Header from '../Components/Header'
 import Footer from '../Components/Footer'
 import styles from './NeetRep.module.css'
 import Bullet from '../Assets/bullet.png'
+import { useEffect } from 'react'
 function NeetRep() {
+    useEffect(() => {
+        window.scroll(0, 0);
+      }, []);
   return (
     <>
         <Header />

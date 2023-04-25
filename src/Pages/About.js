@@ -5,7 +5,11 @@ import styles from './About.module.css'
 import Amma from '../Assets/Mata-Amritanandamayi.png'
 import College from '../Assets/maxresdefault.jpg'
 import { useState } from 'react'
+import { useEffect } from 'react'
 const About = () => {
+  useEffect(() => {
+    window.scroll(0, 0);
+  }, []);
   const [show, setShow] = useState(false)
   return (
     <>

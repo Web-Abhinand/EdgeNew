@@ -3,7 +3,11 @@ import Footer from '../Components/Footer'
 import Header from '../Components/Header'
 import '../Pages/contact.modules.css'
 import call from '../Assets/call.gif'
+import { useEffect } from 'react'
 const Contact = () => {
+  useEffect(() => {
+    window.scroll(0, 0);
+  }, []);
   return (
     <>
         <Header />

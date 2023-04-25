@@ -6,7 +6,11 @@ import Footer from '../Components/Footer'
 import styles from './intMent.module.css'
 import Bullet from '../Assets/bullet.png'
 import skill_develop from '../Assets/skill_devlop.jpg'
+import { useEffect } from 'react'
 function SkillDevPro() {
+    useEffect(() => {
+        window.scroll(0, 0);
+      }, []);
   return (
     <>
         <Header />
