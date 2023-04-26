@@ -153,17 +153,23 @@
     margin: 0 auto;
 }
 .how_Amrita_edge_helps_you_left_div{
-    flex: 1 1 50%;
     text-align: left;
+    flex: 1 1 50%;
+     min-width: 250px;
 }
 .how_Amrita_edge_helps_you_left_div p{
     text-align: justify;
     font-family: 'Montserrat';
     line-height: 1.8rem;
     opacity: 0.8;
+    word-wrap: break-word;
 }
 .how_Amrita_edge_helps_you_right_div{
-    flex: 1 1 50%;
+    flex: 1 1 40%;
+}
+.how_Amrita_edge_helps_you_right_div img{
+    height: 100%;
+    object-fit: cover;
 }
 .how_Amrita_edge_helps_you_right_div img{
     width: 100%;

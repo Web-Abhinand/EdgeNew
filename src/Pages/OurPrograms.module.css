@@ -10,11 +10,10 @@
     margin: 0 auto;
 }
 .home_card_section_flex > div{
-  flex: 1 1 23em;
+  flex: 1 1 25em;
   margin: 1em;
   margin-bottom: 2rem;
   flex-wrap: wrap;
-  min-height: 400px;
 }
 
  .cardContent::-webkit-scrollbar {
