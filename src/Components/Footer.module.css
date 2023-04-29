@@ -27,7 +27,6 @@
 }
 .mainFooter_div p{
     font-size: 1rem;
-    margin-bottom: 1rem;
     font-family: 'montserrat', sans-serif;
     opacity: 0.8;
 }
@@ -44,15 +43,6 @@
 }
 .Footer_logo_div img{
     margin: 0 auto;
-}
-li.location{
-    list-style-image: url('../Assets/location.png');
-    font-size: 1rem;
-    margin-bottom: 1rem;
-    font-family: 'montserrat', sans-serif;
-}
-.mainFooter_div_Flex_2 ul{
-    list-style-position: inside;
 }
 .socialMedialogs{
 display: flex;

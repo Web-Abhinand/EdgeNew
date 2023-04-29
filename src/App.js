@@ -11,7 +11,13 @@ import AEdSciCarPro from './Pages/AEdSciCarPro';
 import CivilServFound from './Pages/CivilServiceFound';
 import Wisdom360 from './Pages/Wisdom360';
 import SkillDevPro from './Pages/SkilDevPro.js';
+import { useEffect } from 'react';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 function App() {
+  useEffect(() => {
+    AOS.init({ duration: 1500 });
+  }, []);
   return (
     <div className="App">
       <BrowserRouter>
