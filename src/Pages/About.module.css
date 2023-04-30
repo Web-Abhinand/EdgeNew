@@ -23,7 +23,10 @@
     color: #fff;
 }
 .aboutHeroText p{
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Montserrat', sans-serif; 
+    font-size: 1.1rem;
+    width: 80%;
+    opacity: 0.8;
 }
 .AboutButton1{
     outline: 0;
@@ -37,8 +40,6 @@
     -ms-user-select: none;
     user-select: none;
     vertical-align: middle;
-    -moz-appearance: none;
-    -webkit-appearance: none;
     -webkit-text-decoration: none;
     text-decoration: none;
     color: inherit;
@@ -114,4 +115,43 @@
 }
 .aboutOurInspiration_flex_left2 img{
     width: 100%;
+}
+/* write the media query */
+@media (max-width: 768px) {
+    .aboutHeroText{
+        width: 100%;
+        left: 0;
+        padding: 0 1rem;
+        width: 100%;
+    }
+    .aboutHeroText h1{
+        font-size: 1.5rem;
+    }
+    .aboutHeroText p{
+        font-size: 1rem;
+        width: 100%;
+    }
+    .aboutOurInspiration_flex{
+        width: 100%;
+        flex-direction: column;
+    }
+    .aboutOurInspiration_flex_left{
+        width: 100%;
+        margin-bottom: 2rem;
+    }
+    .aboutOurInspiration_flex_right{
+        width: 100%;
+    }
+    .aboutOurInspiration_flex_right p{
+        font-size: 1rem;
+    }
+    .aboutOurInspiration_flex_left2{
+        width: 100%;
+    }
+    .aboutOurInspiration_flex_left2 img{
+        width: 100%;
+    }
+    .AboutButton1{
+        font-size: 1rem;
+    }
 }
