@@ -34,7 +34,7 @@ const OurPrograms = () => {
     <>
       <Header />
       <section className={styles.home_card_section}>
-        <h1 className='mb-10 py-2 text-6xl font-medium leading-tight text-primary' style={{ color: '#BC631C', fontFamily: 'Source Sans Pro' ,marginTop:'3rem'}}>Our Programs</h1>
+        <h1 className='mb-10 py-2 text-6xl font-medium leading-tight text-primary' style={{ color: '#C20B4D', fontFamily: 'Montserrat' ,marginTop:'3rem'}}>Our Programs</h1>
         <div className={styles.home_card_section_flex}>
           <div>
             <Card >
@@ -47,7 +47,7 @@ const OurPrograms = () => {
                 />
                 <CardContent>
                   <div className={styles.cardContent}>
-                  <p className='mb-2 font-semibold text-xl' style={{ color: '#BC631C' }}>
+                  <p className='mb-2 font-semibold text-xl' style={{ color: '#C20B4D' }}>
                   Amrita Edge Pre-Nurture Foundation Program
                   </p>
                   <p style={{ textAlign: 'justify', fontFamily: 'Montserrat', fontSize: '15px',opacity:'0.9'}}>
@@ -57,7 +57,7 @@ const OurPrograms = () => {
                 </CardContent>
               </CardActionArea>
               <CardActions>
-                <Button size="small" style={{ color: '#BC631C' }}>
+                <Button size="small" style={{ color: '##C20B4D' }}>
                   <Link to='/our-programs/pre-nuture'>Learn More</Link>
                 </Button>
               </CardActions>
@@ -74,7 +74,7 @@ const OurPrograms = () => {
                 />
                 <CardContent>
                 <div className={styles.cardContent}>
-                  <p className='mb-2 font-semibold text-xl' style={{ color: '#BC631C' }}>
+                  <p className='mb-2 font-semibold text-xl' style={{ color: '#C20B4D' }}>
                       Amrita Edge Science & Career Foundation Program
                   </p>
                   <p style={{ textAlign: 'justify', fontFamily: 'Montserrat', fontSize: '15px',opacity:'0.9'}}>
@@ -84,7 +84,7 @@ const OurPrograms = () => {
                 </CardContent>  
               </CardActionArea>
               <CardActions>
-                <Button size="small" style={{ color: '#BC631C' }}>
+                <Button size="small" style={{ color: '#C20B4D' }}>
                   <Link to='/our-programs/sci-car-found'>Learn More</Link>
                 </Button>
               </CardActions>
@@ -101,7 +101,7 @@ const OurPrograms = () => {
                 />
                 <CardContent>
                 <div className={styles.cardContent}>
-                  <p className='mb-2 font-semibold text-xl' style={{ color: '#BC631C' }}>
+                  <p className='mb-2 font-semibold text-xl' style={{ color: '#C20B4D' }}>
                     Civil Service Foundation Programs for School Students
                   </p>
                   <p style={{ textAlign: 'justify', fontFamily: 'Montserrat', fontSize: '15px',opacity:'0.9'}}>
@@ -111,7 +111,7 @@ const OurPrograms = () => {
                 </CardContent>
               </CardActionArea>
               <CardActions>
-                <Button size="small" style={{ color: '#BC631C' }}>
+                <Button size="small" style={{ color: '#C20B4D' }}>
                   <Link to='/our-programs/civil-ser'>Learn More</Link>
                 </Button>
               </CardActions>
@@ -128,7 +128,7 @@ const OurPrograms = () => {
                 />
                 <CardContent>
                 <div className={styles.cardContent}>
-                  <p className='mb-2 font-semibold text-xl' style={{ color: '#BC631C' }}>
+                  <p className='mb-2 font-semibold text-xl' style={{ color: '#C20B4D' }}>
                     Amrita Edge Wisdom 360 - Civil Service Coaching- Level 2 
                   </p>
                   <p style={{ textAlign: 'justify', fontFamily: 'Montserrat', fontSize: '15px',opacity:'0.9'}}>
@@ -138,7 +138,7 @@ const OurPrograms = () => {
                 </CardContent>
               </CardActionArea>
               <CardActions>
-                <Button size="small" style={{ color: '#BC631C' }}>
+                <Button size="small" style={{ color: '#C20B4D' }}>
                   <Link to='/our-programs/wis-360'>Learn More</Link>
                 </Button>
               </CardActions>
@@ -155,7 +155,7 @@ const OurPrograms = () => {
                 />
                 <CardContent>
                 <div className={styles.cardContent}>
-                  <p className='mb-2 font-semibold text-xl' style={{ color: '#BC631C' }}>
+                  <p className='mb-2 font-semibold text-xl' style={{ color: '#C20B4D' }}>
                     Amrita Edge Skill Development Program (AESDP) 
                   </p>
                   <p style={{ textAlign: 'justify', fontFamily: 'Montserrat', fontSize: '15px',opacity:'0.9'}}>
@@ -165,7 +165,7 @@ const OurPrograms = () => {
                 </CardContent>
               </CardActionArea>
               <CardActions>
-                <Button size="small" style={{ color: '#BC631C' }}>
+                <Button size="small" style={{ color: '#C20B4D' }}>
                   <Link to='/our-programs/skill-develop'>Learn More</Link>
                 </Button>
               </CardActions>
@@ -182,7 +182,7 @@ const OurPrograms = () => {
                 />
                 <CardContent>
                 <div className={styles.cardContent}>
-                  <p className='mb-2 font-semibold text-xl' style={{ color: '#BC631C' }}>
+                  <p className='mb-2 font-semibold text-xl' style={{ color: '#C20B4D' }}>
                     Amrita Edge Commerce Foundation Program 
                   </p>
                   <p style={{ textAlign: 'justify', fontFamily: 'Montserrat', fontSize: '15px',opacity:'0.9'}}>
@@ -192,7 +192,7 @@ const OurPrograms = () => {
                 </CardContent>
               </CardActionArea>
               <CardActions>
-                <Button size="small" style={{ color: '#BC631C' }}>
+                <Button size="small" style={{ color: '#C20B4D' }}>
                   <Link to='/our-programs/neet-rep'>Learn More</Link>
                 </Button>
               </CardActions>
@@ -209,7 +209,7 @@ const OurPrograms = () => {
                 />
                 <CardContent>
                 <div className={styles.cardContent}>
-                  <p className='mb-2 font-semibold text-xl' style={{ color: '#BC631C' }}>
+                  <p className='mb-2 font-semibold text-xl' style={{ color: '#C20B4D' }}>
                     Amrita Edge NTSE Coaching Program 
                   </p>
                   <p style={{ textAlign: 'justify', fontFamily: 'Montserrat', fontSize: '15px',opacity:'0.9'}}>
@@ -219,7 +219,7 @@ const OurPrograms = () => {
                 </CardContent>
               </CardActionArea>
               <CardActions>
-                <Button size="small" style={{ color: '#BC631C' }}>
+                <Button size="small" style={{ color: '#C20B4D' }}>
                   <Link to='/our-programs/neet-rep'>Learn More</Link>
                 </Button>
               </CardActions>
@@ -236,7 +236,7 @@ const OurPrograms = () => {
                 />
                 <CardContent>
                 <div className={styles.cardContent}>
-                  <p className='mb-2 font-semibold text-xl' style={{ color: '#BC631C' }}>
+                  <p className='mb-2 font-semibold text-xl' style={{ color: '#C20B4D' }}>
                     Amrita Edge Exam Catalyst Program 
                   </p>
                   <p style={{ textAlign: 'justify', fontFamily: 'Montserrat', fontSize: '15px',opacity:'0.9'}}>
@@ -246,7 +246,7 @@ const OurPrograms = () => {
                 </CardContent>
               </CardActionArea>
               <CardActions>
-                <Button size="small" style={{ color: '#BC631C' }}>
+                <Button size="small" style={{ color: '#C20B4D' }}>
                   Learn More
                 </Button>
               </CardActions>
@@ -263,7 +263,7 @@ const OurPrograms = () => {
                 />
                 <CardContent>
                 <div className={styles.cardContent}>
-                  <p className='mb-2 font-semibold text-xl' style={{ color: '#BC631C' }}>
+                  <p className='mb-2 font-semibold text-xl' style={{ color: '#C20B4D' }}>
                     Amrita Edge Science Bridge Course Program
                   </p>
                   <p style={{ textAlign: 'justify', fontFamily: 'Montserrat', fontSize: '15px',opacity:'0.9'}}>
@@ -273,7 +273,7 @@ const OurPrograms = () => {
                 </CardContent>
               </CardActionArea>
               <CardActions>
-                <Button size="small" style={{ color: '#BC631C' }}>
+                <Button size="small" style={{ color: '#C20B4D' }}>
                   Learn More
                 </Button>
               </CardActions>
@@ -290,7 +290,7 @@ const OurPrograms = () => {
                 />
                 <CardContent>
                 <div className={styles.cardContent}>
-                  <p className='mb-2 font-semibold text-xl' style={{ color: '#BC631C' }}>
+                  <p className='mb-2 font-semibold text-xl' style={{ color: '#C20B4D' }}>
                   	Amrita Integrated Mentors (AIM) Program
                   </p>
                   <p style={{ textAlign: 'justify', fontFamily: 'Montserrat', fontSize: '15px',opacity:'0.9'}}>
@@ -300,7 +300,7 @@ const OurPrograms = () => {
                 </CardContent>
               </CardActionArea>
               <CardActions>
-                <Button size="small" style={{ color: '#BC631C' }}>
+                <Button size="small" style={{ color: '#C20B4D' }}>
                   <Link to='/our-programs/int-ment'>Learn More</Link>
                 </Button>
               </CardActions>
@@ -317,7 +317,7 @@ const OurPrograms = () => {
                 />
                 <CardContent>
                 <div className={styles.cardContent}>
-                  <p className='mb-2 font-semibold text-xl' style={{ color: '#BC631C' }}>
+                  <p className='mb-2 font-semibold text-xl' style={{ color: '#C20B4D' }}>
                     Entrance Coaching 
                   </p>
                   <p style={{ textAlign: 'justify', fontFamily: 'Montserrat', fontSize: '15px',opacity:'0.9'}}>
@@ -327,7 +327,7 @@ const OurPrograms = () => {
                 </CardContent>
               </CardActionArea>
               <CardActions>
-                <Button size="small" style={{ color: '#BC631C' }}>
+                <Button size="small" style={{ color: '#C20B4D' }}>
                   <Link to='/our-programs/int-ment'>Learn More</Link>
                 </Button>
               </CardActions>
@@ -344,7 +344,7 @@ const OurPrograms = () => {
                 />
                 <CardContent>
                 <div className={styles.cardContent}>
-                  <p className='mb-2 font-semibold text-xl' style={{ color: '#BC631C' }}>
+                  <p className='mb-2 font-semibold text-xl' style={{ color: '#C20B4D' }}>
                     NDA Coaching  
                   </p>
                   <p style={{ textAlign: 'justify', fontFamily: 'Montserrat', fontSize: '15px',opacity:'0.9'}}>
@@ -354,7 +354,7 @@ const OurPrograms = () => {
                 </CardContent>
               </CardActionArea>
               <CardActions>
-                <Button size="small" style={{ color: '#BC631C' }}>
+                <Button size="small" style={{ color: '#C20B4D' }}>
                   <Link to='/our-programs/int-ment'>Learn More</Link>
                 </Button>
               </CardActions>
@@ -371,7 +371,7 @@ const OurPrograms = () => {
                 />
                 <CardContent>
                 <div className={styles.cardContent}>
-                  <p className='mb-2 font-semibold text-xl' style={{ color: '#BC631C' }}>
+                  <p className='mb-2 font-semibold text-xl' style={{ color: '#C20B4D' }}>
                     Amrita Edge NEET Repeaters Program  
                   </p>
                   <p style={{ textAlign: 'justify', fontFamily: 'Montserrat', fontSize: '15px',opacity:'0.9'}}>
@@ -381,7 +381,7 @@ const OurPrograms = () => {
                 </CardContent>
               </CardActionArea>
               <CardActions>
-                <Button size="small" style={{ color: '#BC631C' }}>
+                <Button size="small" style={{ color: '#C20B4D' }}>
                   <Link to='/our-programs/neet-rep'>Learn More</Link>
                 </Button>
               </CardActions>
@@ -398,7 +398,7 @@ const OurPrograms = () => {
                 />
                 <CardContent>
                 <div className={styles.cardContent}>
-                  <p className='mb-2 font-semibold text-xl' style={{ color: '#BC631C' }}>
+                  <p className='mb-2 font-semibold text-xl' style={{ color: '#C20B4D' }}>
                     Amrita Edge Extended Crash (JEE & NEET) Program 
                   </p>
                   <p style={{ textAlign: 'justify', fontFamily: 'Montserrat', fontSize: '15px',opacity:'0.9'}}>
@@ -408,7 +408,7 @@ const OurPrograms = () => {
                 </CardContent>
               </CardActionArea>
               <CardActions>
-                <Button size="small" style={{ color: '#BC631C' }}>
+                <Button size="small" style={{ color: '#C20B4D' }}>
                   <Link to='/our-programs/neet-rep'>Learn More</Link>
                 </Button>
               </CardActions>
@@ -425,7 +425,7 @@ const OurPrograms = () => {
                 />
                 <CardContent>
                 <div className={styles.cardContent}>
-                  <p className='mb-2 font-semibold text-xl' style={{ color: '#BC631C' }}>
+                  <p className='mb-2 font-semibold text-xl' style={{ color: '#C20B4D' }}>
                     PCM GS - Advanced Civil Service Coaching for Undergraduate Students 
                   </p>
                   <p style={{ textAlign: 'justify', fontFamily: 'Montserrat', fontSize: '15px',opacity:'0.9'}}>
@@ -435,7 +435,7 @@ const OurPrograms = () => {
                 </CardContent>
               </CardActionArea>
               <CardActions>
-                <Button size="small" style={{ color: '#BC631C' }}>
+                <Button size="small" style={{ color: '#C20B4D' }}>
                   <Link to='/our-programs/neet-rep'>Learn More</Link>
                 </Button>
               </CardActions>
@@ -452,7 +452,7 @@ const OurPrograms = () => {
                 />
                 <CardContent>
                 <div className={styles.cardContent}>
-                  <p className='mb-2 font-semibold text-xl' style={{ color: '#BC631C' }}>
+                  <p className='mb-2 font-semibold text-xl' style={{ color: '#C20B4D' }}>
                     NEET Crash Program
                   </p>
                   <p style={{ textAlign: 'justify', fontFamily: 'Montserrat', fontSize: '15px',opacity:'0.9'}}>
@@ -462,7 +462,7 @@ const OurPrograms = () => {
                 </CardContent>
               </CardActionArea>
               <CardActions>
-                <Button size="small" style={{ color: '#BC631C' }}>
+                <Button size="small" style={{ color: '#C20B4D' }}>
                   Learn More
                 </Button>
               </CardActions>
@@ -479,7 +479,7 @@ const OurPrograms = () => {
                 />
                 <CardContent>
                   <div className={styles.cardContent}>
-                  <p className='mb-2 font-semibold text-xl' style={{ color: '#BC631C' }}>
+                  <p className='mb-2 font-semibold text-xl' style={{ color: '#C20B4D' }}>
                     Triguna Summer Camp
                   </p>
                   <p style={{ textAlign: 'justify', fontFamily: 'Montserrat', fontSize: '15px',opacity:'0.9'}}>
@@ -489,7 +489,7 @@ const OurPrograms = () => {
                 </CardContent>
               </CardActionArea>
               <CardActions>
-                <Button size="small" style={{ color: '#BC631C' }}>
+                <Button size="small" style={{ color: '#C20B4D' }}>
                   Learn More
                 </Button>
               </CardActions>
@@ -506,7 +506,7 @@ const OurPrograms = () => {
                 />
                 <CardContent>
                 <div className={styles.cardContent}>
-                  <p className='mb-2 font-semibold text-xl' style={{ color: '#BC631C' }}>
+                  <p className='mb-2 font-semibold text-xl' style={{ color: '#C20B4D' }}>
                     Amrita Edge Teachers Training Program 
                   </p>
                   <p style={{ textAlign: 'justify', fontFamily: 'Montserrat', fontSize: '15px',opacity:'0.9'}}>
@@ -516,7 +516,7 @@ const OurPrograms = () => {
                 </CardContent>
               </CardActionArea>
               <CardActions>
-                <Button size="small" style={{ color: '#BC631C' }}>
+                <Button size="small" style={{ color: '#C20B4D' }}>
                   Learn More
                 </Button>
               </CardActions>

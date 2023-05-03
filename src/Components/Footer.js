@@ -42,7 +42,7 @@ const Footer = () => {
           </div>
           <div className={styles.mainFooter_div_Flex_3}>
             <h3>Follow us on</h3>
-            <p>Don't hesitate to give us a call or send us a message in our social media</p>
+            <p></p>
             <div className={styles.socialMedialogs} style={{marginTop:'1rem'}}>
               <div><a href="https://www.facebook.com/profile.php?id=100069114991859 " target="_blank" rel="noreferrer"><img src={Facebook} style={{height:'30px',width:'30px'}} alt="facebook" /></a></div>
               <div><a href="https://www.instagram.com/amrita.edge/" target="_blank" rel="noreferrer"><img src={Instagram} alt="instagram" style={{height:'30px',width:'30px'}}/></a></div>
