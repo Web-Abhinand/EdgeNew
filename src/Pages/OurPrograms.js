@@ -57,7 +57,7 @@ const OurPrograms = () => {
                 </CardContent>
               </CardActionArea>
               <CardActions>
-                <Button size="small" style={{ color: '##C20B4D' }}>
+                <Button size="small" style={{ color: '#C20B4D' }}>
                   <Link to='/our-programs/pre-nuture'>Learn More</Link>
                 </Button>
               </CardActions>
@@ -193,7 +193,7 @@ const OurPrograms = () => {
               </CardActionArea>
               <CardActions>
                 <Button size="small" style={{ color: '#C20B4D' }}>
-                  <Link to='/our-programs/neet-rep'>Learn More</Link>
+                  <Link to='/our-programs/amrita_edge_commerce_foundation_program'>Learn More</Link>
                 </Button>
               </CardActions>
             </Card>
@@ -220,7 +220,7 @@ const OurPrograms = () => {
               </CardActionArea>
               <CardActions>
                 <Button size="small" style={{ color: '#C20B4D' }}>
-                  <Link to='/our-programs/neet-rep'>Learn More</Link>
+                  <Link to='/our-programs/amrita_edge_ntse'>Learn More</Link>
                 </Button>
               </CardActions>
             </Card>
@@ -247,7 +247,7 @@ const OurPrograms = () => {
               </CardActionArea>
               <CardActions>
                 <Button size="small" style={{ color: '#C20B4D' }}>
-                  Learn More
+                  <Link to='/our-programs/amrita_edge_exam_catalyst_program'>Learn More</Link>
                 </Button>
               </CardActions>
             </Card>
@@ -274,7 +274,7 @@ const OurPrograms = () => {
               </CardActionArea>
               <CardActions>
                 <Button size="small" style={{ color: '#C20B4D' }}>
-                  Learn More
+                  <Link to='/our-programs/amrita_edge_science_bridge_course_program'>Learn More</Link>
                 </Button>
               </CardActions>
             </Card>
@@ -328,7 +328,7 @@ const OurPrograms = () => {
               </CardActionArea>
               <CardActions>
                 <Button size="small" style={{ color: '#C20B4D' }}>
-                  <Link to='/our-programs/int-ment'>Learn More</Link>
+                  <Link to='/our-programs/entrance_coaching'>Learn More</Link>
                 </Button>
               </CardActions>
             </Card>
@@ -355,11 +355,11 @@ const OurPrograms = () => {
               </CardActionArea>
               <CardActions>
                 <Button size="small" style={{ color: '#C20B4D' }}>
-                  <Link to='/our-programs/int-ment'>Learn More</Link>
+                  <Link to='/our-programs/nda_coaching'>Learn More</Link>
                 </Button>
               </CardActions>
             </Card>
-          </div>
+          </div>   
           <div>
             <Card >
               <CardActionArea>
@@ -386,7 +386,7 @@ const OurPrograms = () => {
                 </Button>
               </CardActions>
             </Card>
-          </div>
+          </div>         
           <div>
             <Card >
               <CardActionArea>
@@ -409,7 +409,7 @@ const OurPrograms = () => {
               </CardActionArea>
               <CardActions>
                 <Button size="small" style={{ color: '#C20B4D' }}>
-                  <Link to='/our-programs/neet-rep'>Learn More</Link>
+                  <Link to='/our-programs/amrita_edge_jee_neet_coaching'>Learn More</Link>
                 </Button>
               </CardActions>
             </Card>
@@ -436,7 +436,7 @@ const OurPrograms = () => {
               </CardActionArea>
               <CardActions>
                 <Button size="small" style={{ color: '#C20B4D' }}>
-                  <Link to='/our-programs/neet-rep'>Learn More</Link>
+                  <Link to='/our-programs/amrita_edge_pcm'>Learn More</Link>
                 </Button>
               </CardActions>
             </Card>
@@ -463,7 +463,7 @@ const OurPrograms = () => {
               </CardActionArea>
               <CardActions>
                 <Button size="small" style={{ color: '#C20B4D' }}>
-                  Learn More
+                  <Link to='/our-programs/amrita_edge_neet_crash'>Learn More</Link>
                 </Button>
               </CardActions>
             </Card>
@@ -490,7 +490,7 @@ const OurPrograms = () => {
               </CardActionArea>
               <CardActions>
                 <Button size="small" style={{ color: '#C20B4D' }}>
-                  Learn More
+                  <Link to='/our-programs/amrita_edge_triguna_summer_camp'>Learn More</Link>
                 </Button>
               </CardActions>
             </Card>
@@ -517,7 +517,7 @@ const OurPrograms = () => {
               </CardActionArea>
               <CardActions>
                 <Button size="small" style={{ color: '#C20B4D' }}>
-                  Learn More
+                  <Link to='/our-programs/amrita_edge_teachers_training'>Learn More</Link>
                 </Button>
               </CardActions>
             </Card>
