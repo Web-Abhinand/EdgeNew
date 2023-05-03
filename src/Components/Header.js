@@ -1,14 +1,14 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import styles from './Header.module.css'
-import logo from '../Assets/logo.png'
+import logo from '../Assets/thumbnail_Asset 1.png'
 const Header = () => {
   return (
     <div className={styles.mainHeaderdiv}>
       <div className={styles.mainHeaderdivflex}>
         <div className={styles.mainHeaderdivflexdiv1}>
           <div className={styles.mainHeaderdiv_logo}>
-            <img src={logo} alt="logo" style={{marginLeft:'1.5rem'}}/>
+            <img src={logo} alt="logo" style={{marginLeft:'1.5rem',maxHeight:'8vh',padding:'0.2rem'}}/>
           </div>
         </div>
         <div className={styles.mainHeaderdivflexdiv2}>
