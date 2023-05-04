@@ -1,7 +1,8 @@
 import React, { useState } from 'react'
 import Footer from '../Components/Footer'
+import {Link} from 'react-router-dom'
 import Header from '../Components/Header'
-import '../Pages/Career.modules.css'
+import styles from '../Pages/Career.modules.css'
 import career from '../Assets/career.gif'
 
 import { useEffect  } from 'react'
@@ -21,12 +22,12 @@ const Career = () => {
       return (
         <>
             <Header />
-            <div className='career__heading' style={{ marginTop :"13vh"}} >
+            <div className={styles.career__heading} style={{ marginTop :"13vh"}} >
                 <h1>CAREER</h1>
                 </div>
-            <div className='career__main'>
-                <div className='career__1'>
-                    <div className='heading'>
+            <div className={styles.career__main}>
+                <div className={styles.career__1}>
+                    <div className={styles.heading}>
                         <h3>AMRITA EDGE JUNIOR FACULTY RECRUITMENT</h3>
                         <p style={{ marginTop :"2vh"}}>AUM NAMAHA SHIVAYA
 Amrita Edge is an initiative of Amrita Vishwa Vidyapeetham to support and facilitate students with skill
@@ -42,7 +43,7 @@ methods (offline & online).</p>
                               show ? 
                            
                            <>
-                           <div class='viewmore_para'>
+                           <div class={styles.viewmore_para}>
                             <p>Job Description</p>
                             <p>Subjects:</p>
                             <ul>
@@ -55,25 +56,27 @@ methods (offline & online).</p>
                             <ul >
                                 <li>Handle entrance oriented classes from grade 7 to grade 1</li>
                                 <li>Entrance oriented Study material development</li>
-                                <li>Work with the senior teacher to monitor the class schedule</li>
-                                <li>Assist teachers with lesson preparation by getting materials ready and </li>
-                                <li>Revise lesson material with student</li>
+                                <li>Work with the senior teacher to monitor the class schedule.</li>
+                                <li>Assist teachers with lesson preparation by getting materials ready and setting up equipment.</li>
+                                <li>Revise lesson material with student.</li>
                                 <li>Collaborate with senior teachers to recognize issues students are facing and recommend solutions.</li>
-                                <li>Document student progress and communicate with parents to keep them informed</li>
+                                <li>Document student progress and communicate with parents to keep them informed.</li>
                                 <li>Help senior teachers to create lesson plans.</li>
-                                <li>Attend all training classes, parent conferences, and faculty meeting</li>
+                                <li>Attend all training classes, parent conferences, and faculty meetings.</li>
                                 
                                 </ul>
                                 <p>Requirements:</p>
                                 <ul>
                                 <li>M.Sc. degree</li>
-                                <li>0 to 2 years’ experience as a teacher or similar ro</li>
+                                <li>0 to 2 years’ experience as a teacher or similar role.</li>
                                 <li>Basic computer knowledge (MS office)</li>
-                                <li>Solid understanding of classroom activities and teaching be</li>
-                                <li>Must have a compassionate and positive</li>
-                                <li>Excellent written and verbal communication skills</li>
-                                <li>Outstanding interpersonal and presentation abilities</li>
+                                <li>Solid understanding of classroom activities and teaching best practices.</li>
+                                <li>Must have a compassionate and positive attitude.</li>
+                                <li>Excellent written and verbal communication skills.</li>
+                                <li>Outstanding interpersonal and presentation abilities.</li>
                                 </ul>
+
+                                <p>Email your resume at <Link to='contact@amritaedge.com'>contact@amritaedge.com</Link> Please Contact 9747030712 for any clarification.</p>
                                 <div style={{ textAlign: 'left', marginTop: '1em' }}>
                         <button variant="contained" className='view_button' onClick={handleClick2}>Show less</button>
                         
@@ -88,8 +91,8 @@ methods (offline & online).</p>
                     </div>
                     </div>
                     </div>
-                    <div className='career__2'>
-                    <div className='gif'>
+                    <div className={styles.career__2}>
+                    <div className={styles.gif}>
             <img src={career} alt='gif' />
           </div>
                         </div>

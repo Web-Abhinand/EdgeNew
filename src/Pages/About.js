@@ -28,7 +28,7 @@ const About = () => {
         </div>
         <div className={styles.aboutOurInspiration_flex}>
           <div className={styles.aboutOurInspiration_flex_left} data-aos="fade-up">
-            <img src={Amma} alt='Sri Mata Amritanandamayi devi'></img>
+            <img src={Amma} alt='Sri  Mata Amritanandamayi devi'></img>
           </div>
           <div className={styles.aboutOurInspiration_flex_right}>
             <h1 className='text-3xl font-medium' style={{color:'#BC631C',fontFamily:'Montserrat',color:'#C20B4D'}}>Sri Mata Amritanandamayi</h1>
