@@ -16,7 +16,7 @@ const AECFP = () => {
                     <div className={styles.main_neet_rep_left_div}>
                         <div className={styles.main_neet_rep_left_div_text}>
                             <h1 className='pt-2 text-4xl font-medium leading-tight text-primary' style={{ color: '#BC631C', fontFamily: 'Source Sans Pro',margin:'0',paddingBottom:'1rem',textAlign:'left'}}>Amrita Edge Commerce Foundation Program</h1>
-                            <p>&emsp;Amrita Edge commerce foundation is intended to train those students who are preparingfor 11th class and 12th commerce course, Entrance exam preparation like  CA, CS, CWA or any academic courses like B.com (P), B.com (Hons.) and BBA. In the competitive environment, a strong foundation of accounting knowledge along with analytical skills and intelligence quotient (IQ) is required. Students are guided by the best professional experts in the field of commerce.</p>
+                            <p style={{paddingBottom:'1rem'}}>&emsp;Amrita Edge commerce foundation is intended to train those students who are preparingfor 11th class and 12th commerce course, Entrance exam preparation like  CA, CS, CWA or any academic courses like B.com (P), B.com (Hons.) and BBA. In the competitive environment, a strong foundation of accounting knowledge along with analytical skills and intelligence quotient (IQ) is required. Students are guided by the best professional experts in the field of commerce.</p>
                         </div>
                     </div>
                     <div className={styles.main_neet_rep_right_div}>

@@ -14,15 +14,15 @@ const About = () => {
   return (
     <>
       <Header></Header>
-      <div className={styles.about_main_div}>
+        <div className={styles.about_main_div}>
         <div className={styles.aboutHeroText} >
           <h1 className='m-0 p-0 text-6xl font-medium leading-tight' style={{color:'#fff'}} data-aos="fade-up">About Us</h1>
           {/* tailwind class for paragraph hero section*/}
           <p style={{ }} className='mt-4 mb-6'>Amrita Edge is an Initiative of Amrita VishwaVidyapeetham which focuses on an all-rounded individualised learning trajectory to enhance and diversify students' career growth pathways while integrating Amrita's philosophy of 'Education for Life and Education for Living'. </p>
           <button variant="contained" className={styles.AboutButton1}>Learn More</button>
         </div>
-      </div>
-      <section className={styles.aboutOurInspiration}>
+        </div>
+        <section className={styles.aboutOurInspiration}>
         <div className={styles.aboutOurInspirationHeading}>
           <h1 className='text-4xl font-medium' style={{color:'#C20B4D',fontFamily:'Montserrat'}} data-aos="fade-up">Our Inspiration</h1>
         </div>
@@ -52,8 +52,8 @@ const About = () => {
               :null}
           </div>
         </div>
-      </section>
-      <section className={styles.about_Amrita_VishwaVidyapeetham}>
+        </section>
+        <section className={styles.about_Amrita_VishwaVidyapeetham}>
       <div className={styles.aboutOurInspirationHeading}>
         </div>
         <div className={styles.aboutOurInspiration_flex} style={{paddingBottom:'1rem'}}>
@@ -76,7 +76,7 @@ const About = () => {
             <img src={College} alt='amrita vishwa vidyapeetham' style={{borderRadius:'10px'}}></img>
           </div>
         </div>
-      </section>
+        </section>
       <Footer />
     </>
   )

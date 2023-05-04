@@ -61,7 +61,7 @@ const Home = () => {
                         </p>
                     </div>
                     <div className={styles.how_Amrita_edge_helps_you_right_div} data-aos="fade-up">
-                        <div className={styles.how_img_div} data-aos="fade-left">
+                        <div className={styles.how_img_div} data-aos="fade-up">
                             <img src={HowHelp} alt="how amrita edge helps you" className={styles.how_img} ></img>
                         </div>
                     </div>
@@ -114,7 +114,7 @@ const Home = () => {
                                     </div>
                                 </div>
                                 <div className="text" data-swiper-parallax="-100">
-                                    <p style={{ fontFamily: 'Montserrat', opacity: '0.7' }}>
+                                    <p style={{ fontFamily: 'Montserrat', opacity: '0.7',textAlign:'center'}}>
                                         "Hi,
                                         I am Amish Santhosh son of Santhosh P.K and Resitha Santhosh I am currently in Qatar along with my
                                         parents. I am studying in MES Indian school in 9th std
@@ -142,7 +142,7 @@ const Home = () => {
                                     </div>
                                 </div>
                                 <div className="text" data-swiper-parallax="-100">
-                                    <p style={{ fontFamily: 'Montserrat', opacity: '0.7' }}>
+                                    <p style={{ fontFamily: 'Montserrat', opacity: '0.7',textAlign:'center'}}>
                                         "Myself Aavani Prasad from Amrita Vidyalayam Perumbavoor.
                                         I am studying in Xth std. I have been attending this course since 2021.My aim in life is to become an IAS
                                         officer. That's why I joined in this course. I think it is the best platform to achieve my goal. I really
@@ -168,7 +168,7 @@ const Home = () => {
                                     </div>
                                 </div>
                                 <div className="text" data-swiper-parallax="-100">
-                                    <p style={{ fontFamily: 'Montserrat', opacity: '0.7' }}>
+                                    <p style={{ fontFamily: 'Montserrat', opacity: '0.7',textAlign:'center'}}>
                                         "Being a student who has been through this journey from the very start, I can gladly tell that the
                                         initiative has aided in both my academic and overall performance. Faculties were always pleased to
                                         quench my thirst for deeper and vast understanding. Taking concepts beforehand, in a clear and

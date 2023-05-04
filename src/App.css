@@ -37,3 +37,7 @@
     transform: rotate(360deg);
   }
 }
+.MuiButton-outlined{
+  color: #C20B4D !important;
+  border: 1px solid #C20B4D !important;
+}

@@ -53,3 +53,27 @@
     transition: 0.5s;
     cursor: pointer;
 }
+@media screen and (max-width: 768px){
+    .main_neet_rep_flex{
+        display: flex;
+        width: 90%;
+        margin: 0 auto;
+        flex-direction: column-reverse;
+    }
+    .details_neet_rep_inner{
+        width: 90%;
+        margin: 0 auto;
+        padding-bottom: 1rem;
+    }
+    .details_neet_rep_inner ul{
+        text-align: left;
+        font-family: 'Montserrat', sans-serif;
+    }
+    .details_neet_rep_inner ul li{
+        margin-bottom: 1rem;
+        width: 100%;
+        text-align: justify;
+        line-height: 2rem;
+        list-style-position: outside;
+    }
+}

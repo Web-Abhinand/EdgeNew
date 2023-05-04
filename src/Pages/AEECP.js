@@ -19,7 +19,7 @@ function AEECP() {
                 <div className={styles.main_neet_rep_left_div}>
                     <div className={styles.main_neet_rep_left_div_text}>
                         <h1 className='pt-2 text-4xl font-medium leading-tight text-primary' style={{ color: '#BC631C', fontFamily: 'Source Sans Pro',margin:'0',paddingBottom:'1rem',textAlign:'left'}}>Amrita Edge Exam Catalyst Program </h1>
-                        <p>&emsp;Exam Catalyst is our focused, structured, revision-based "Class 12 CBSE Board Booster Crash Programme”. The programme is mentored by the experienced and expert faculties of Amrita EDGE to foster the board exam preparation and to achieve 100% success by strengthening the concepts as well as getting exposed to different types of questions as per the new CBSE pattern without having to deviate too much from their own preparation.</p>
+                        <p style={{paddingBottom:'1rem'}}>&emsp;Exam Catalyst is our focused, structured, revision-based "Class 12 CBSE Board Booster Crash Programme”. The programme is mentored by the experienced and expert faculties of Amrita EDGE to foster the board exam preparation and to achieve 100% success by strengthening the concepts as well as getting exposed to different types of questions as per the new CBSE pattern without having to deviate too much from their own preparation.</p>
                     </div>
                 </div>
                 <div className={styles.main_neet_rep_right_div}>

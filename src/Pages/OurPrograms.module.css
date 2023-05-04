@@ -10,7 +10,7 @@
     margin: 0 auto;
 }
 .home_card_section_flex > div{
-  flex: 1 1 25em;
+  flex: 1 1 20em;
   margin: 1em;
   margin-bottom: 2rem;
   flex-wrap: wrap;
@@ -27,4 +27,28 @@
   }
   .home_card_section_flex div img{
     object-fit: contain;
+  }
+  @media screen and (min-width: 1000px) and (max-width: 1600px){
+    .home_card_section_flex > div{
+      flex: 1 1 29% !important;
+    }
+    .home_card_section{
+      padding: 1rem;
+    }
+    .home_card_section h1{
+      padding-top: 2rem !important;
+      font-size: 3rem !important;
+    }
+  }
+  @media screen and (max-width: 768px){
+    .home_card_section_flex > div{
+      flex: 1 1 100% !important;
+    }
+    .home_card_section{
+      padding: 1rem;
+    }
+    .home_card_section h1{
+      padding-top: 2rem !important;
+      font-size: 2rem !important;
+    }
   }

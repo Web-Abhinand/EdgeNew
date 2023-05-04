@@ -25,7 +25,6 @@
 }
 .heroText p{
     font-family: 'Montserrat', sans-serif;
-
 }
 .heroText h1{
     font-family: 'Montserrat', sans-serif;
@@ -43,8 +42,6 @@
     -ms-user-select: none;
     user-select: none;
     vertical-align: middle;
-    -moz-appearance: none;
-    -webkit-appearance: none;
     -webkit-text-decoration: none;
     text-decoration: none;
     color: inherit;
@@ -146,6 +143,7 @@
 }
 .how_Amrita_edge_helps_you{
     width: 100%;
+    padding-top: 2rem;
 }
 .how_Amrita_edge_helps_you_inner_div{
     display: flex;
@@ -153,6 +151,8 @@
     margin: 0 auto;
     gap: 2rem;
     padding: 1rem;
+    align-items: center;
+    justify-content: space-between;
 }
 .how_Amrita_edge_helps_you_left_div{
     text-align: left;
@@ -165,19 +165,46 @@
     line-height: 1.8rem;
     opacity: 0.8;
     word-wrap: break-word;
+    width: 95%;
 }
 .how_Amrita_edge_helps_you_right_div{
     flex: 1 1 40%;
 }
 .how_Amrita_edge_helps_you_right_div img{
-    /* object-fit: contain; */
     width: 100%;
-    height: 100% !important;
     border-radius: 10px;
-    margin-top: 5vh;
 }
 /* write the media query */
+/* media query for medium and small laptops */
+
+@media screen and (min-width: 768px) and (max-width: 1600px) {
+    .how_Amrita_edge_helps_you_left_div{
+        text-align: left;
+        flex: 1 1 50%;
+        min-width: 250px;
+    }
+    .how_Amrita_edge_helps_you_right_div{
+        flex: 1 1 40%;
+    }
+    .how_Amrita_edge_helps_you_inner_div{
+        display: flex;
+        width: 90%;
+        margin: 0 auto;
+        gap: 2rem;
+        padding: 1rem;
+        align-items: center;
+    }
+    .how_Amrita_edge_helps_you_right_div img{
+        width: 100%;
+        border-radius: 10px;
+    }
+  }
+
+
 @media screen and (max-width: 768px){
+    .heroText h1{
+        font-size: 50px !important;
+    }
     .home_card_section_flex > div{
         width: 100%;
     }
@@ -199,5 +226,21 @@
     }
     .how_Amrita_edge_helps_you_right_div img{
         width: 100%;
+    }
+}
+@media screen and (max-width: 571px){
+    .heroSectionSvg{
+        bottom: -1%;
+    }
+    .heroText{
+        width: 100%;
+    }
+}
+@media screen and (max-width:450px) {
+    .how_Amrita_edge_helps_you_left_div h1{
+        font-size: 32px;
+    }
+    .home_testimonials h1{
+        font-size: 32px;
     }
 }
