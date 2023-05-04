@@ -24,7 +24,7 @@ h1{
     color: #C40B4D;
     margin: 10px;
 }
-h3{
+.heading h3{
     color: #C40B4D;
     font-size: 24px;
     font-weight: 600;
@@ -52,4 +52,24 @@ p{
 }
 li{
     text-align: left;
+    list-style-type: disc;
+    
+}
+.v__ul{
+    margin-left: 35%;
+}
+.v__head{
+    font-size: 30px;
+    font-weight: 500;
+    text-align: center;
+    margin-top: 5px;
+    color: #C40B4D;
+}
+
+
+.v__subhead{
+    font-size: 20px;
+    font-weight: 500;
+    margin-left: 20%;
+    margin-top: 5px;
 }

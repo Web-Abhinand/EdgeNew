@@ -1,8 +1,7 @@
 import React, { useState } from 'react'
 import Footer from '../Components/Footer'
-import {Link} from 'react-router-dom'
 import Header from '../Components/Header'
-import styles from '../Pages/Career.modules.css'
+import '../Pages/Career.modules.css'
 import career from '../Assets/career.gif'
 
 import { useEffect  } from 'react'
@@ -22,14 +21,14 @@ const Career = () => {
       return (
         <>
             <Header />
-            <div className={styles.career__heading} style={{ marginTop :"13vh"}} >
+            <div className='career__heading' style={{ marginTop :"13vh"}} >
                 <h1>CAREER</h1>
                 </div>
-            <div className={styles.career__main}>
-                <div className={styles.career__1}>
-                    <div className={styles.heading}>
+            <div className='career__main'>
+                <div className='career__1'>
+                    <div className='heading'>
                         <h3>AMRITA EDGE JUNIOR FACULTY RECRUITMENT</h3>
-                        <p style={{ marginTop :"2vh"}}>AUM NAMAHA SHIVAYA
+                        <p style={{ marginTop :"2vh"}}>
 Amrita Edge is an initiative of Amrita Vishwa Vidyapeetham to support and facilitate students with skill
 development programs. Amrita Edge offers active outreach programs to support school students to
 identify and nurture their interests and skills. We are currently looking for a friendly and competent teacher to join our team. If you are a
@@ -43,17 +42,17 @@ methods (offline & online).</p>
                               show ? 
                            
                            <>
-                           <div class={styles.viewmore_para}>
-                            <p>Job Description</p>
-                            <p>Subjects:</p>
-                            <ul>
+                           <div className='viewmore_para'>
+                            <p className='v__head'>Job Description</p>
+                            <p className='v__subhead'>Subjects:</p>
+                            <ul className='v__ul'>
                                 <li>Mathematics</li>
                                 <li>Physics</li>
                                 <li>Chemistry</li>
                                 <li>Biology</li>
                             </ul>
-                            <p>Responsibilities:</p>
-                            <ul >
+                            <p className='v__subhead'>Responsibilities:</p>
+                            <ul className='v__ul' >
                                 <li>Handle entrance oriented classes from grade 7 to grade 1</li>
                                 <li>Entrance oriented Study material development</li>
                                 <li>Work with the senior teacher to monitor the class schedule.</li>
@@ -65,8 +64,8 @@ methods (offline & online).</p>
                                 <li>Attend all training classes, parent conferences, and faculty meetings.</li>
                                 
                                 </ul>
-                                <p>Requirements:</p>
-                                <ul>
+                                <p className='v__subhead'>Requirements:</p>
+                                <ul className='v__ul'>
                                 <li>M.Sc. degree</li>
                                 <li>0 to 2 years’ experience as a teacher or similar role.</li>
                                 <li>Basic computer knowledge (MS office)</li>
@@ -76,7 +75,7 @@ methods (offline & online).</p>
                                 <li>Outstanding interpersonal and presentation abilities.</li>
                                 </ul>
 
-                                <p>Email your resume at <Link to='contact@amritaedge.com'>contact@amritaedge.com</Link> Please Contact 9747030712 for any clarification.</p>
+                                <p  >Email your resume at contact@amritaedge.com Please Contact 9747030712 for any clarification.</p>
                                 <div style={{ textAlign: 'left', marginTop: '1em' }}>
                         <button variant="contained" className='view_button' onClick={handleClick2}>Show less</button>
                         
@@ -86,13 +85,13 @@ methods (offline & online).</p>
 
 : null}
 <div style={{ textAlign: 'left', marginTop: '1em' }}>
-                        <button variant="contained" className='view_button' onClick={handleClick}>View More</button>
+                    {show ? null :   <button variant="contained" className='view_button' onClick={handleClick}>View More</button>}
                         
                     </div>
                     </div>
                     </div>
-                    <div className={styles.career__2}>
-                    <div className={styles.gif}>
+                    <div className='career__2'>
+                    <div className='gif'>
             <img src={career} alt='gif' />
           </div>
                         </div>
