@@ -1,11 +1,19 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Footer from '../Components/Footer'
 import Header from '../Components/Header'
 import '../Pages/contact.modules.css'
-import call from '../Assets/call.gif'
-import { useEffect } from 'react'
+import call from '../Assets/contact1.svg'
+import { useEffect  } from 'react'
 const Contact = () => {
+  const [show, setShow] = useState(false);
+  const handleClick = () => {
+    setShow(true);
+  }
+  const handleClick2 = () => {
+    setShow(false);
+  }
   useEffect(() => {
+
     window.scroll(0, 0);
   }, []);
   return (
@@ -32,8 +40,8 @@ const Contact = () => {
             </div>
             <div className='form__group_r col-lg-12 pt-2 p-1'>
             <label for="" class="radioText">Iam:</label>&nbsp;&nbsp; 
-            <input type="radio" value="School Going" checked  name="going"></input>&nbsp;&nbsp;School Going&nbsp;&nbsp;  
-            <input type="radio" value="College Going"  name="going"></input> &nbsp;&nbsp;College Going           
+            <input type="radio" value="School Going"   name="going" onClick={handleClick}></input>&nbsp;&nbsp;School Going&nbsp;&nbsp;  
+            <input type="radio" value="College Going"  name="going" onClick={handleClick2}></input> &nbsp;&nbsp;College Going           
               </div>
               <div className='form__group col-lg-12 pt-2 p-1'>
                 <select name='grade' id='grade'>
@@ -47,6 +55,7 @@ const Contact = () => {
                   </select>
 
                 </div>
+               
                 <div class="form__group col-lg-12 pt-2 p-1">
                               <input name="stream" type="text" class="form-control" id="" placeholder="Stream" required=""></input>
                            </div>
@@ -59,7 +68,12 @@ const Contact = () => {
                            <div class="form__group col-lg-12 pt-2 p-1">
                               <input name="home_town" type="text" class="form-control" id="" placeholder="Home Town" required=""></input>
                            </div>
-                           <div class="form__group col-lg-12 pt-2 p-1">
+                           {
+                              show ? 
+                           
+                           <>
+  
+                            <div class="form__group col-lg-12 pt-2 p-1">
                               <input name="parent_name" type="text" class="form-control" id="" placeholder="Parent Name" required=""></input>
                            </div>
                            <div class="form__group col-lg-12 pt-2 p-1">
@@ -67,12 +81,13 @@ const Contact = () => {
                            </div>
                            <div class="form__group col-lg-12 pt-2 p-1">
                               <input name="parent_email" type="email" class="form-control" id="" placeholder="Parent Email Address" required=""></input>
-                           </div>
-                           <div class="form__group2 col-lg-12  pt-2 p-1">
+                           </div> 
+                           {/* <div class="form__group2 col-lg-12  pt-2 p-1">
                               <textarea  name="queries" id="" cols="35" rows="3" class="col-12 form-control"
                                  placeholder="Any Queries ???"></textarea>
-                           </div>
-
+                           </div>  */}
+                          </>
+                          : null}
                            <div className='form__group submit'>
                            <button class="btn col">Submit <i class="fa fa-thumbs-o-up"
                                        ></i>

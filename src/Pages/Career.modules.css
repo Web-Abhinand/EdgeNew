@@ -1,0 +1,52 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+.career__1{
+    background-color: #f5f5f500;
+    width: 60%;
+}
+.career__2{
+    background-color: #ffffff00;
+    width: 40%;
+    
+   
+   
+}
+.career__main{
+    display: flex;
+    height: 100%;
+}
+h1{
+    font-size: 40px;
+   font-weight: 900;
+    color: #C40B4D;
+    margin: 10px;
+}
+h3{
+    color: #C40B4D;
+    font-size: 24px;
+    font-weight: 600;
+}
+.heading{
+    margin-top: 5%;
+    margin-left: 5%;
+    margin-right: 5%;
+    height: auto;
+    
+}
+.view_button{
+   
+    width:100px;
+    margin-left: 50%;
+    margin-right: 5%;
+    margin-bottom: 5%;
+    height: auto;
+    color:white;
+    background-color: #C40B4D;
+    border-radius: 5px;
+}
+p{
+   text-align: left;
+}
