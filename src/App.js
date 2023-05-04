@@ -1,6 +1,7 @@
 import './App.css';
 import { BrowserRouter,Routes,Route} from 'react-router-dom';
 import Home from './Pages/Home';
+import { useEffect } from 'react';
 import About from './Pages/About';
 import Contact from './Pages/Contact';
 import OurPrograms from './Pages/OurPrograms';
@@ -13,9 +14,6 @@ import Wisdom360 from './Pages/Wisdom360';
 import SkillDevPro from './Pages/SkilDevPro.js';
 import AEECP from './Pages/AEECP';
 import Career from './Pages/Career';
-
-
-
 import AESBCP from './Pages/AESBCP';
 import AECFP from './Pages/AECFP';
 import AENTSE from './Pages/AENTSE';
@@ -26,8 +24,12 @@ import PCM from './Pages/PCM';
 import NEETCrash from './Pages/NEETCrash';
 import TrigunaSummerCamp from './Pages/TrigunaSummerCamp';
 import AETeachersTraining from './Pages/AETeachersTraining';
+import Aos from 'aos';
+import 'aos/dist/aos.css';
 function App() {
- 
+  useEffect(() => {
+    Aos.init({duration: 1500});
+  }, []);
   return (
     <div className="App">
       <BrowserRouter>
@@ -54,7 +56,6 @@ function App() {
           <Route path='/our-programs/amrita_edge_neet_crash' element={<NEETCrash/>}/>
           <Route path='/our-programs/amrita_edge_triguna_summer_camp' element={<TrigunaSummerCamp/>}/>
           <Route path='/our-programs/amrita_edge_teachers_training' element={<AETeachersTraining/>}/>
-
           <Route path='/career' element={<Career/>}/>
         </Routes>
       </BrowserRouter>

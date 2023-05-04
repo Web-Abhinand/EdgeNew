@@ -6,7 +6,6 @@ import Avatar from '../Assets/Amish Santhosh        IAS 1 1.png'
 import Avatar2 from '../Assets/Aavani Prasad      IAS 1.png'
 import Avatar3 from '../Assets/Slice 1 1.png'
 import HowHelp from '../Assets/amrita_college.jpg'
-
 import './styles.css';
 
 // import { useRef } from "react";
@@ -21,10 +20,12 @@ import { useEffect } from 'react'
 import { Link } from 'react-router-dom'
 // import required modules
 import { Autoplay, Pagination, Parallax } from 'swiper';
-
+import Aos from 'aos'
+import 'aos/dist/aos.css';
 const Home = () => {
     useEffect(() => {
         window.scroll(0, 0);
+        Aos.init({ duration: 1500 });
     }, []);
     return (
         <>
@@ -40,10 +41,10 @@ const Home = () => {
                     {/* tailwind class for paragraph hero section*/}
                     <p style={{ fontSize: '1.1rem', width: '80%', opacity: '0.8' }} className='mt-4 mb-6' data-aos="fade-up"></p>
                     <div style={{ textAlign: 'left', marginTop: '1em' }}>
-                        <button variant="contained" className={styles.heroButton1}>
+                        <button variant="contained" className={styles.heroButton1} data-aos="fade-up">
                             <Link to='/our-programs'>Learn More</Link>
                         </button>
-                        <button variant="contained" className={styles.heroButton2}><Link to='/contact'>Register</Link></button>
+                        <button variant="contained" className={styles.heroButton2} data-aos="fade-up"><Link to='/contact'>Register</Link></button>
                     </div>
                 </div>
             </div>
@@ -51,15 +52,15 @@ const Home = () => {
                 <div className={styles.how_Amrita_edge_helps_you_inner_div}>
                     <div className={styles.how_Amrita_edge_helps_you_left_div} style={{ paddingBottom: '1rem' }}>
                         <h1 className='mb-2 py-1 text-5xl font-medium leading-tight text-primary' style={{ color: '#C20B4D', fontFamily: 'Montserrat' }} data-aos="fade-up">Amrita Edge</h1>
-                        <p>&emsp;Amrita Edge is an Initiative of Amrita VishwaVidyapeetham which focuses on an all-rounded individualised learning trajectory to enhance and diversify students' career growth pathways while integrating Amrita's philosophy of 'Education for Life and Education for Living'.</p>
-                        <p>
+                        <p data-aos="fade-up">&emsp;Amrita Edge is an Initiative of Amrita VishwaVidyapeetham which focuses on an all-rounded individualised learning trajectory to enhance and diversify students' career growth pathways while integrating Amrita's philosophy of 'Education for Life and Education for Living'.</p>
+                        <p data-aos="fade-up">
                             &emsp;Our skill development and outreach programs to support school, college students are offered jointly by reputed national and international faculty and eminent bureaucrats, which will help students to equip and expose them to address real-life applications.
                         </p>
-                        <p>
+                        <p data-aos="fade-up">
                             &emsp;Innovative and award-winning pedagogic practices provide experiential learning allowing students anytime access and flexibility with personalised mentorship and interactivity.
                         </p>
                     </div>
-                    <div className={styles.how_Amrita_edge_helps_you_right_div}>
+                    <div className={styles.how_Amrita_edge_helps_you_right_div} data-aos="fade-up">
                         <div className={styles.how_img_div} data-aos="fade-left">
                             <img src={HowHelp} alt="how amrita edge helps you" className={styles.how_img} ></img>
                         </div>
@@ -109,7 +110,7 @@ const Home = () => {
                                     </div>
                                     <div>
                                         <h2 style={{ fontFamily: 'Montserrat' }}>Amish Santhosh</h2>
-                                        <p style={{ fontFamily: 'Montserrat', fontSize: '1rem', fontWeight: '400', marginBottom: '1rem' }}>Foundation 2021-22 batch</p>
+                                        <p style={{ fontFamily: 'Montserrat', fontSize: '1rem', fontWeight: '400', marginBottom: '1rem',textAlign:'center' }}>Foundation 2021-22 batch</p>
                                     </div>
                                 </div>
                                 <div className="text" data-swiper-parallax="-100">
@@ -136,7 +137,7 @@ const Home = () => {
                                     </div>
                                     <div>
                                         <h2 style={{ fontFamily: 'Montserrat' }}>Aavani Prasad</h2>
-                                        <p style={{ fontFamily: 'Montserrat', fontSize: '1rem', fontWeight: '400', marginBottom: '1rem' }}>Wisdom 360, 2022-23
+                                        <p style={{ fontFamily: 'Montserrat', fontSize: '1rem', fontWeight: '400', marginBottom: '1rem' ,textAlign:'center'}}>Wisdom 360, 2022-23
                                         </p>
                                     </div>
                                 </div>
@@ -162,7 +163,7 @@ const Home = () => {
                                     <div className={styles.slide_image_div}>
                                         <img src={Avatar3} style={{ height: "100px", width: '100px', padding: '1rem' }} alt='avatar'></img>
                                         <h2 style={{ fontFamily: 'Montserrat' }}>Arundhathi Krishna V R</h2>
-                                        <p style={{ fontFamily: 'Montserrat', fontSize: '1rem', fontWeight: '400', marginBottom: '1rem' }}>SF9 A V, Koyilandy
+                                        <p style={{ fontFamily: 'Montserrat', fontSize: '1rem', fontWeight: '400', marginBottom: '1rem' ,textAlign:'center'}}>SF9 A V, Koyilandy
                                         </p>
                                     </div>
                                 </div>

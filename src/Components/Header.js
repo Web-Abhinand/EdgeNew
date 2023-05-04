@@ -8,15 +8,14 @@ const Header = () => {
       <div className={styles.mainHeaderdivflex}>
         <div className={styles.mainHeaderdivflexdiv1}>
           <div className={styles.mainHeaderdiv_logo}>
-            <img src={logo} alt="logo" style={{marginLeft:'1.5rem',maxHeight:'8vh',padding:'0.2rem'}}/>
+          <Link to="/"><img src={logo} alt="logo" style={{marginLeft:'1.5rem',maxHeight:'8vh',padding:'0.2rem'}}/></Link>
           </div>
         </div>
         <div className={styles.mainHeaderdivflexdiv2}>
           <div className={styles.mainHeaderdivmenu}>
-            <Link to="/">Home</Link>
             <Link to="/about">About</Link>
-            <Link to="/contact">Contact</Link>
             <Link to="/our-programs">Our Programs</Link>
+            <Link to="/contact">Contact</Link>
           </div>
         </div>
       </div>

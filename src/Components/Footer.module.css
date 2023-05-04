@@ -10,7 +10,7 @@
 .mainFooter_div_Flex{
     display: flex;
     justify-content: space-around;
-    width: 80%;
+    width: 90%;
     margin: 0 auto;
     height: 100%;
     border-bottom: 1px solid grey;
