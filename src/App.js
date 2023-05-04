@@ -55,7 +55,6 @@ function App() {
           <Route path='/our-programs/amrita_edge_neet_crash' element={<NEETCrash/>}/>
           <Route path='/our-programs/amrita_edge_triguna_summer_camp' element={<TrigunaSummerCamp/>}/>
           <Route path='/our-programs/amrita_edge_teachers_training' element={<AETeachersTraining/>}/>
-
         </Routes>
       </BrowserRouter>
     </div>
