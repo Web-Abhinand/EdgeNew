@@ -19,7 +19,7 @@ const About = () => {
           <h1 className='m-0 p-0 text-6xl font-medium leading-tight' style={{color:'#fff'}} data-aos="fade-up">About Us</h1>
           {/* tailwind class for paragraph hero section*/}
           <p style={{ }} className='mt-4 mb-6'>Amrita Edge is an Initiative of Amrita VishwaVidyapeetham which focuses on an all-rounded individualised learning trajectory to enhance and diversify students' career growth pathways while integrating Amrita's philosophy of 'Education for Life and Education for Living'. </p>
-          <button variant="contained" className={styles.AboutButton1}>Learn More</button>
+          <button variant="contained" className={styles.AboutButton1}><Link to='/our-programs'>Learn More</Link></button>
         </div>
         </div>
         <section className={styles.aboutOurInspiration}>
