@@ -21,6 +21,7 @@
 .aboutHeroText h1{
     font-family: 'Montserrat', sans-serif;
     color: #fff;
+    text-transform: uppercase;
 }
 .aboutHeroText p{
     font-family: 'Montserrat', sans-serif; 
@@ -71,6 +72,9 @@
     background-repeat: no-repeat;
     padding-top: 5vh;
 }
+.aboutOurInspiration h1{
+    text-transform: uppercase;
+}
 .aboutOurInspirationHeading{
     width: 100%;
     text-align: center;
@@ -116,6 +120,13 @@
 .aboutOurInspiration_flex_left2 img{
     width: 100%;
 }
+
+@media screen and (min-width: 768px) and (max-width: 1600px) {
+    .aboutHeroText h1{
+        font-size: 2.5rem;
+    }
+}
+
 /* write the media query */
 @media (max-width: 768px) {
     .aboutHeroText{

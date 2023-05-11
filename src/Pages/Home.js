@@ -41,10 +41,7 @@ const Home = () => {
                     {/* tailwind class for paragraph hero section*/}
                     <p style={{ fontSize: '1.1rem', width: '80%', opacity: '0.8' }} className='mt-4 mb-6' data-aos="fade-up"></p>
                     <div style={{ textAlign: 'left', marginTop: '1em' }}>
-                        <button variant="contained" className={styles.heroButton1} data-aos="fade-up">
-                            <Link to='/our-programs'>Learn More</Link>
-                        </button>
-                        <button variant="contained" className={styles.heroButton2} data-aos="fade-up"><Link to='/contact'>Register</Link></button>
+                        <button variant="contained" className={styles.heroButton2} data-aos="fade-up"><Link to='/contact'>CONNECT US</Link></button>
                     </div>
                 </div>
             </div>

@@ -96,15 +96,15 @@ const Header = () => {
         <div className={styles.mainHeaderdivflex}>
           <div className={styles.mainHeaderdivflexdiv1}>
             <div className={styles.mainHeaderdiv_logo}>
-              <Link to="/"><img src={logo} alt="logo" style={{ marginLeft: '1.5rem', maxHeight: '8vh', padding: '0.2rem' }} /></Link>
+              <Link to="/"><img src={logo} alt="logo" style={{ marginLeft: '1.5rem', maxHeight: '12vh', padding: '0.2rem'}} /></Link>
             </div>
           </div>
           <div className={styles.mainHeaderdivflexdiv2}>
             <div className={styles.mainHeaderdivmenu}>
-              <Link to="/about">About</Link>
-              <Link to="/our-programs">Our Programs</Link>
-              <Link to="/Career">Career</Link>
-              <Link to="/contact">Contact</Link>
+              <Link to="/about">ABOUT</Link>
+              <Link to="/our-programs">OUR PROGRAMS</Link>
+              <Link to="/Career">CAREER</Link>
+              <Link to="/contact">CONTACT</Link>
               <div className={styles.hamdiv}>
                 {['left'].map((anchor) => (
                   <React.Fragment key={anchor}>

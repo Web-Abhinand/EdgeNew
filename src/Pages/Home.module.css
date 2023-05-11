@@ -8,6 +8,9 @@
     height: 80vh;
     position: relative;
 }
+.heroSection h1{
+    text-transform: uppercase;
+}
 .heroSectionSvg{
     position: absolute;
     bottom: 0;
@@ -120,6 +123,9 @@
     padding-bottom: 5vh;
     background-color: #f5f5f5
 }
+.home_testimonials h1{
+    text-transform: uppercase;
+}
 .home_testimonials_innerDiv{
     width: 80%;
     margin: 0 auto;
@@ -144,6 +150,9 @@
 .how_Amrita_edge_helps_you{
     width: 100%;
     padding-top: 2rem;
+}
+.how_Amrita_edge_helps_you h1{
+    text-transform: uppercase;
 }
 .how_Amrita_edge_helps_you_inner_div{
     display: flex;
@@ -178,13 +187,31 @@
 /* media query for medium and small laptops */
 
 @media screen and (min-width: 768px) and (max-width: 1600px) {
+    .heroText h1{
+        font-size: 2.5rem;
+    }
+    .section_testimonials_heading h1{
+        font-size: 2.5rem;
+    }
     .how_Amrita_edge_helps_you_left_div{
         text-align: left;
         flex: 1 1 50%;
         min-width: 250px;
     }
+    .how_Amrita_edge_helps_you_left_div h1{
+        font-size: 2.5rem;
+    }
+    .how_Amrita_edge_helps_you_left_div p{
+        line-height: 1.5rem;
+        opacity: 0.8;
+    }
     .how_Amrita_edge_helps_you_right_div{
         flex: 1 1 40%;
+    }
+    .how_Amrita_edge_helps_you_right_div img{
+        min-height: 350px;
+        object-fit: cover;
+        border-radius: 10px;
     }
     .how_Amrita_edge_helps_you_inner_div{
         display: flex;

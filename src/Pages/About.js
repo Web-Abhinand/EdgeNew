@@ -20,7 +20,6 @@ const About = () => {
           <h1 className='m-0 p-0 text-6xl font-medium leading-tight' style={{color:'#fff'}} data-aos="fade-up">About Us</h1>
           {/* tailwind class for paragraph hero section*/}
           <p style={{ }} className='mt-4 mb-6'>Amrita Edge is an Initiative of Amrita VishwaVidyapeetham which focuses on an all-rounded individualised learning trajectory to enhance and diversify students' career growth pathways while integrating Amrita's philosophy of 'Education for Life and Education for Living'.</p>
-          <button variant="contained" className={styles.AboutButton1}><Link to='/our-programs'>Learn More</Link></button>
         </div>
         </div>
         <section className={styles.aboutOurInspiration}>
@@ -59,7 +58,7 @@ const About = () => {
         </div>
         <div className={styles.aboutOurInspiration_flex} style={{paddingBottom:'1rem'}}>
           <div className={styles.aboutOurInspiration_flex_right} >
-            <h1 className='text-3xl font-medium' style={{color:'#C20B4D',fontFamily:'Montserrat'}}>Amrita Vishwa Vidyapeetham</h1>
+            <h1 className='text-3xl font-medium' style={{color:'#C20B4D',fontFamily:'Montserrat',textTransform:'uppercase'}}>Amrita Vishwa Vidyapeetham</h1>
               <p style={{ fontSize: '1.1rem', width: '100%', opacity: '0.8',textAlign:'justify'}} data-aos="fade-up">
               &emsp; Amrita Vishwa Vidyapeetham is a multi-campus, multi-disciplinary research academia that is accredited 'A++' by NAAC and is ranked as one of the best research institutions in India.
               </p>

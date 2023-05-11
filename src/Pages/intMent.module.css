@@ -11,6 +11,9 @@
 .main_neet_rep_left_div{
     flex: 1 1 50%;
 }
+.main_neet_rep_left_div h1{
+    text-transform: uppercase !important;
+}
 .main_neet_rep_right_div{
     flex: 1 1 50%;
 }
@@ -32,6 +35,9 @@
     width: 80%;
     margin: 0 auto;
     padding-bottom: 1rem;
+}
+.details_neet_rep_inner h1{
+    text-transform: uppercase;
 }
 .details_neet_rep_inner ul{
     text-align: left;

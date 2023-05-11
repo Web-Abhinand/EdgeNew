@@ -1,116 +1,150 @@
 /* css code for fixed header */
 .mainHeaderdiv {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 100;
-    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
-    height: 10vh;
-    background-color: rgba(0, 0, 0, 0.3);
-  }
-  .mainHeaderdivflex{
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      height: 100%;
-  }
-  .mainHeaderdivflexdiv1{
-      width: 30%;
-  }
-  .mainHeaderdivflexdiv2{
-      width: 40%;
-  }
-  .mainHeaderdivmenu{
-      display: flex;
-      justify-content: space-around;
-      align-items: center;
-      width: 100%;
-  }
-  .mainHeaderdivmenu a{
-      text-decoration: none;
-      color: white;
-      font-size: 1.2rem;
-      font-weight: 500;
-      padding: 0 1rem;
-      opacity: 0.8;
-      font-family: 'Montserrat', sans-serif;
-  }
-  .mainHeaderdivmenu a:after{
-      content: '';
-      display: block;
-      width: 0%;
-      height: 2px;
-      background: #fff;
-      transition: width 0.3s;
-  }
-  .mainHeaderdivmenu a:hover::after{
-      width: 100%;
-      transition: width 0.3s;
-  }
-  .hamdiv{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+  height: 12vh;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.mainHeaderdivflex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+
+.mainHeaderdivflexdiv1 {
+  width: 30%;
+}
+
+.mainHeaderdivflexdiv2 {
+  width: 40%;
+}
+
+.mainHeaderdivmenu {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+}
+
+.mainHeaderdivmenu a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.2rem;
+  font-weight: 500;
+  padding: 0 1rem;
+  opacity: 0.8;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.mainHeaderdivmenu a:after {
+  content: '';
+  display: block;
+  width: 0%;
+  height: 2px;
+  background: #fff;
+  transition: width 0.3s;
+}
+
+.mainHeaderdivmenu a:hover::after {
+  width: 100%;
+  transition: width 0.3s;
+}
+
+.hamdiv {
+  display: none;
+  margin-right: 1rem;
+}
+
+.mobileheaderimagediv {
+  padding: 1rem;
+  margin-bottom: 2rem;
+}
+
+.mainHeaderdiv_logo img {
+  min-width: 350px;
+}
+
+@media screen and (max-width: 1024px) {
+  .mainHeaderdivmenu a {
     display: none;
+  }
+
+  .mainHeaderdivmenu {
+    justify-content: space-between;
+  }
+
+  .hamdiv {
+    display: flex;
+    margin-left: auto;
     margin-right: 1rem;
-  }
-  .mobileheaderimagediv{
     padding: 1rem;
-    margin-bottom: 2rem;
   }
-  @media screen and (max-width: 768px){
-        .mainHeaderdivmenu a{
-            display: none;
-        }
-        .mainHeaderdivmenu{
-            justify-content: space-between;
-        }
-        .hamdiv{
-            display: flex;
-            margin-left: auto;
-            margin-right: 1rem;
-            padding: 1rem;
-        }
-    }
-    .MuiButton-outlined {
-        display: -webkit-inline-box;
-        display: -webkit-inline-flex;
-        display: -ms-inline-flexbox;
-        display: inline-flex;
-        -webkit-align-items: center;
-        -webkit-box-align: center;
-        -ms-flex-align: center;
-        align-items: center;
-        -webkit-box-pack: center;
-        -ms-flex-pack: center;
-        -webkit-justify-content: center;
-        justify-content: center;
-        position: relative;
-        box-sizing: border-box;
-        -webkit-tap-highlight-color: transparent;
-        background-color: transparent;
-        outline: 0;
-        border: 0;
-        margin: 0;
-        border-radius: 0;
-        padding: 0;
-        cursor: pointer;
-        -webkit-user-select: none;
-        -moz-user-select: none;
-        -ms-user-select: none;
-        user-select: none;
-        vertical-align: middle;
-        -webkit-text-decoration: none;
-        text-decoration: none;
-        color: inherit;
-        font-family: "Roboto","Helvetica","Arial",sans-serif;
-        font-weight: 500;
-        font-size: 0.875rem;
-        line-height: 1.75;
-        letter-spacing: 0.02857em;
-        text-transform: uppercase;
-        min-width: 64px;
-        padding: 5px 15px;
-        border-radius: 4px;
-        -webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,border-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
-        transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,border-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
-        color: #C20B4D;
-      }
+}
+
+.MuiButton-outlined {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  position: relative;
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+  background-color: transparent;
+  outline: 0;
+  border: 0;
+  margin: 0;
+  border-radius: 0;
+  padding: 0;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  vertical-align: middle;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  color: inherit;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  font-weight: 500;
+  font-size: 0.875rem;
+  line-height: 1.75;
+  letter-spacing: 0.02857em;
+  text-transform: uppercase;
+  min-width: 64px;
+  padding: 5px 15px;
+  border-radius: 4px;
+  -webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, border-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, border-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  color: #C20B4D;
+  border: none;
+}
+
+@media screen and (max-width: 768px) {
+  .mainHeaderdiv_logo img {
+    min-width: 250px;
+  }
+}
+
+.MuiButton-outlined:hover {
+  background-color: rgba(194, 11, 77, 0.04);
+  border: none;
+}
+@media screen and (min-width: 768px) and (max-width: 1200px){
+  .mainHeaderdivmenu a{
+    font-size: 16px;
+  }
+}
