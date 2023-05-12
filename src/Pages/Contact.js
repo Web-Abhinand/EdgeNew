@@ -10,7 +10,7 @@ const Contact = () => {
   const[name,setName]=useState('');
   const[email,setEmail]=useState('');
   const[phone,setPhone]=useState('');
-  
+  const[going,setGoing]=useState('');
   const[grade,setGrade]=useState('');
   const[stream,setStream]=useState('');
   const[Institution,setInstitution]=useState('');
@@ -28,7 +28,7 @@ const Contact = () => {
     Name:name,
     Email:email,
     Phone:phone,
-    
+    Going:going,
     Grade:grade,
     Stream:stream,
     Institution:Institution,
@@ -45,7 +45,7 @@ console.log(response);
 setName('');
 setEmail('');
 setPhone('');
-
+setGoing('');
 setGrade('');
 setStream('');
 setInstitution('');
@@ -73,7 +73,7 @@ setParent_email('');
   return (
     <>
         <Header />
-        <div form className='contact__form' style={{marginTop :"10vh"}}>
+        <div form='true' className='contact__form' style={{marginTop :"10vh"}}>
           <div className='gif'>
             <img src={call} alt='gif' />
           </div>
@@ -95,14 +95,15 @@ setParent_email('');
 
             </div>
             <div className='form__group_r col-lg-12 pt-2 p-1'>
-            <label for="" className="radioText">Iam:</label>&nbsp;&nbsp; 
-             <input type="radio" value="School Going"   name="going" onClick={handleClick}></input>&nbsp;&nbsp;School Going&nbsp;&nbsp;  
-            <input type="radio" value="College Going"  name="going" onClick={handleClick2}></input> &nbsp;&nbsp;College Going    
-              </div>
+               <label htmlFor="school-going" className="radioText">I am:</label>&nbsp;&nbsp;
+               <input type="radio" id="school-going" name="going" onClick={handleClick} onChange={(e) => setGoing(e.target.value)} value={going} />&nbsp;&nbsp;School Going&nbsp;&nbsp;
+               <input type="radio" id="college-going" name="going" onClick={handleClick2} onChange={(e) => setGoing(e.target.value)} value={going} />&nbsp;&nbsp;College Going
+             </div>
+
               {show ?
               <>
               <div className='form__group col-lg-12 pt-2 p-1'>
-                <select name='grade' id='grade' onChange={(e)=>setGrade(e.target.value)}value={grade}>
+                <select name='grade' id='grade' onChange={(e)=>setGrade(e.target.value)}value={grade} required>
                   <option value=''>Select Grade</option>
                   <option value='7'>Grade 7</option>
                   <option value='8'>Grade 8</option>
