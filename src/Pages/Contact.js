@@ -4,7 +4,61 @@ import Header from '../Components/Header'
 import '../Pages/contact.modules.css'
 import call from '../Assets/contact1.svg'
 import { useEffect  } from 'react'
+
+import axios from 'axios'
 const Contact = () => {
+  const[name,setName]=useState('');
+  const[email,setEmail]=useState('');
+  const[phone,setPhone]=useState('');
+  
+  const[grade,setGrade]=useState('');
+  const[stream,setStream]=useState('');
+  const[Institution,setInstitution]=useState('');
+  const[native_state,setNative_state]=useState('');
+  const[Town,setTown]=useState('');
+  const[parent_name,setParent_name]=useState('');
+  const[parent_phone_no,setParent_phone_no]=useState('');
+  const[parent_email,setParent_email]=useState('');
+  
+  //submit event handler
+  const handleSubmit=(e)=>{
+    e.preventDefault();
+    //console.log(name,email,phone,going,grade,stream,Institution,native_state,Town,parent_phone_no,parent_email,parent_name);
+  const data={
+    Name:name,
+    Email:email,
+    Phone:phone,
+    
+    Grade:grade,
+    Stream:stream,
+    Institution:Institution,
+    Native_state:native_state,
+    Town:Town,
+    Parent_name:parent_name,
+    Parent_phone_no:parent_phone_no,
+    Parent_email:parent_email,
+
+  }
+  axios.post('https://sheet.best/api/sheets/06a2b209-0bb2-43c1-9ea9-1d2b73d77f9d',data).then((response)=>{
+console.log(response);
+//clearing form field
+setName('');
+setEmail('');
+setPhone('');
+
+setGrade('');
+setStream('');
+setInstitution('');
+setNative_state('');
+setTown('');
+setParent_name('');
+setParent_phone_no('');
+setParent_email('');
+
+  })
+  
+  }
+
   const [show, setShow] = useState(false);
   const handleClick = () => {
     setShow(true);
@@ -23,64 +77,77 @@ const Contact = () => {
           <div className='gif'>
             <img src={call} alt='gif' />
           </div>
-          <form className='enquiry__form' >
+          <form className='enquiry__form' autoComplete='off' onSubmit={handleSubmit} >
             <h3>Enquiry Form</h3>
             <div className='form__group col-lg-12 pt-2 p-1'>
-            <label htmlFor='email' >Name:</label> &nbsp;&nbsp;
-              <input type='text' name='name' id='name' placeholder='Enter your name' />
+            <label >Name:</label> &nbsp;&nbsp;
+              <input type='text' name='name' id='name' placeholder='Enter your name'  required onChange={(e)=>setName(e.target.value)}value={name}/>
             </div>
             <div className='form__group col-lg-12 pt-2 p-1'>
-              <label htmlFor='email'>Email:</label>  &nbsp; &nbsp;
-              <input type='email' name='email' id='email' placeholder='Enter your email' />
+              <label >Email:</label>  &nbsp; &nbsp;
+              <input type='email' name='email' id='email' placeholder='Enter your email'  required 
+              onChange={(e)=>setEmail(e.target.value)}value={email}/>
             </div>
             <div className='form__group col-lg-12 pt-2 p-1'>
-              <label htmlFor='phone'>Phone:</label> &nbsp;&nbsp;
-              <input type='text' name='phone' id='phone' placeholder='Enter your phone number' />          
+              <label >Phone:</label> &nbsp;&nbsp;
+              <input type='text' name='phone' id='phone' placeholder='Enter your phone number' required
+              onChange={(e)=>setPhone(e.target.value)}value={phone}/>          
 
             </div>
             <div className='form__group_r col-lg-12 pt-2 p-1'>
-            <label for="" class="radioText">Iam:</label>&nbsp;&nbsp; 
-            <input type="radio" value="School Going"   name="going" onClick={handleClick}></input>&nbsp;&nbsp;School Going&nbsp;&nbsp;  
-            <input type="radio" value="College Going"  name="going" onClick={handleClick2}></input> &nbsp;&nbsp;College Going           
+            <label for="" className="radioText">Iam:</label>&nbsp;&nbsp; 
+             <input type="radio" value="School Going"   name="going" onClick={handleClick}></input>&nbsp;&nbsp;School Going&nbsp;&nbsp;  
+            <input type="radio" value="College Going"  name="going" onClick={handleClick2}></input> &nbsp;&nbsp;College Going    
               </div>
+              {show ?
+              <>
               <div className='form__group col-lg-12 pt-2 p-1'>
-                <select name='grade' id='grade'>
+                <select name='grade' id='grade' onChange={(e)=>setGrade(e.target.value)}value={grade}>
                   <option value=''>Select Grade</option>
-                  <option value='1'>Grade 7</option>
-                  <option value='2'>Grade 8</option>
-                  <option value='3'>Grade 9</option>
-                  <option value='4'>Grade 10</option>
-                  <option value='5'>Plus one</option>
-                  <option value='6'>Plus two</option>
+                  <option value='7'>Grade 7</option>
+                  <option value='8'>Grade 8</option>
+                  <option value='9'>Grade 9</option>
+                  <option value='10'>Grade 10</option>
+                  <option value='plus one'>Plus one</option>
+                  <option value='plus two'>Plus two</option>
                   </select>
 
                 </div>
+                </>
+            : null}
                
-                <div class="form__group col-lg-12 pt-2 p-1">
-                              <input name="stream" type="text" class="form-control" id="" placeholder="Stream" required=""></input>
+                <div className="form__group col-lg-12 pt-2 p-1">
+                              <input name="stream" type="text" className="form-control" id="" placeholder="Stream" required=""
+                              onChange={(e)=>setStream(e.target.value)}value={stream}></input>
                            </div>
-                           <div class="form__group col-lg-12 pt-2 p-1">
-                              <input name="name_of_institution" type="text" class="form-control" id="" placeholder="Name of Institution" required=""></input>
+                           <div className="form__group col-lg-12 pt-2 p-1">
+                              <input name="name_of_institution" type="text" className="form-control" id="" placeholder="Name of Institution" required=""
+                              onChange={(e)=>setInstitution(e.target.value)}value={Institution}></input>
                            </div>
-                           <div class="form__group col-lg-12 pt-2 p-1">
-                              <input name="native_state" type="text" class="form-control" id="" placeholder="Native State" required=""></input>
+                           <div className="form__group col-lg-12 pt-2 p-1">
+                              <input name="native_state" type="text" className="form-control" id="" placeholder="Native State" required=""
+                              onChange={(e)=>setNative_state(e.target.value)}value={native_state}></input>
                            </div>
-                           <div class="form__group col-lg-12 pt-2 p-1">
-                              <input name="home_town" type="text" class="form-control" id="" placeholder="Home Town" required=""></input>
+                           <div className="form__group col-lg-12 pt-2 p-1">
+                              <input name="home_town" type="text" className="form-control" id="" placeholder="Home Town" required=""
+                              onChange={(e)=>setTown(e.target.value)}value={Town}></input>
                            </div>
                            {
                               show ? 
                            
                            <>
   
-                            <div class="form__group col-lg-12 pt-2 p-1">
-                              <input name="parent_name" type="text" class="form-control" id="" placeholder="Parent Name" required=""></input>
+                            <div className="form__group col-lg-12 pt-2 p-1">
+                              <input name="parent_name" type="text" className="form-control" id="" placeholder="Parent Name" required=""
+                              onChange={(e)=>setParent_name(e.target.value)}value={parent_name}></input>
                            </div>
-                           <div class="form__group col-lg-12 pt-2 p-1">
-                              <input type="tel" class="form-control" id="quantity" name="parent_phone_no" pattern="\d{10}" placeholder="Parent Phone" required=""></input>
+                           <div className="form__group col-lg-12 pt-2 p-1">
+                              <input type="tel" className="form-control" id="quantity" name="parent_phone_no" pattern="\d{10}" placeholder="Parent Phone" required=""
+                              onChange={(e)=>setParent_phone_no(e.target.value)}value={parent_phone_no}></input>
                            </div>
-                           <div class="form__group col-lg-12 pt-2 p-1">
-                              <input name="parent_email" type="email" class="form-control" id="" placeholder="Parent Email Address" required=""></input>
+                           <div className="form__group col-lg-12 pt-2 p-1">
+                              <input name="parent_email" type="email" className="form-control" id="" placeholder="Parent Email Address" required=""
+                              onChange={(e)=>setParent_email(e.target.value)}value={parent_email}></input>
                            </div> 
                            {/* <div class="form__group2 col-lg-12  pt-2 p-1">
                               <textarea  name="queries" id="" cols="35" rows="3" class="col-12 form-control"
@@ -89,7 +156,7 @@ const Contact = () => {
                           </>
                           : null}
                            <div className='form__group submit'>
-                           <button class="btn col">Submit <i class="fa fa-thumbs-o-up"
+                           <button className="btn col">Submit <i className="fa fa-thumbs-o-up"
                                        ></i>
                                     </button>
                             </div>
