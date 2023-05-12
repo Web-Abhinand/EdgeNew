@@ -75,8 +75,11 @@ methods (offline & online).</p>
                                 <li>Outstanding interpersonal and presentation abilities.</li>
                                 </ul>
 
-                                <p  >Email your resume at contact@amritaedge.com Please Contact 9747030712 for any clarification.</p>
-                                <div style={{ textAlign: 'left', marginTop: '1em' }}>
+                               <br></br><p style={{ textAlign:'center'}}  >Please Contact 9747030712 for any clarification.</p>
+                               
+                               <button variant="contained" className='view_button' onClick={handleClick}>Apply </button>
+                                <div style={{ textAlign: 'center', marginTop: '1em' }}>
+
                         <button variant="contained" className='view_button' onClick={handleClick2}>Show less</button>
                         
                     </div>
