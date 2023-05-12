@@ -40,7 +40,7 @@ const Header = () => {
       <List>
         <ListItem disablePadding>
           <ListItemButton>
-            <Link to="/about">About</Link>
+            <Link to="/about">ABOUT</Link>
           </ListItemButton>
         </ListItem>
       </List>
@@ -48,7 +48,7 @@ const Header = () => {
       <List>
         <ListItem disablePadding>
           <ListItemButton>
-            <Link to="/our-programs">Our Programs</Link>
+            <Link to="/our-programs">OUR PROGRAMS</Link>
           </ListItemButton>
         </ListItem>
       </List>
@@ -56,7 +56,7 @@ const Header = () => {
       <List>
         <ListItem disablePadding>
           <ListItemButton>
-            <Link to="/Career">Career</Link>
+            <Link to="/Career">CAREER</Link>
           </ListItemButton>
         </ListItem>
       </List>
@@ -64,7 +64,7 @@ const Header = () => {
       <List>
         <ListItem disablePadding>
           <ListItemButton>
-            <Link to="/contact">Contact</Link>
+            <Link to="/contact">CONTACT</Link>
           </ListItemButton>
         </ListItem>
       </List>
@@ -96,7 +96,7 @@ const Header = () => {
         <div className={styles.mainHeaderdivflex}>
           <div className={styles.mainHeaderdivflexdiv1}>
             <div className={styles.mainHeaderdiv_logo}>
-              <Link to="/"><img src={logo} alt="logo" style={{ marginLeft: '1.5rem', maxHeight: '12vh', padding: '0.2rem'}} /></Link>
+              <Link to="/"><img src={logo} alt="logo" style={{ marginLeft: '1.5rem', maxHeight: '12vh', padding: '0.5rem'}} /></Link>
             </div>
           </div>
           <div className={styles.mainHeaderdivflexdiv2}>
