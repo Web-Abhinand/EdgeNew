@@ -1,6 +1,4 @@
-import { ClassNames } from '@emotion/react'
 import React from 'react'
-import NeetRepImg from '../Assets/02.jpg'
 import Header from '../Components/Header'
 import Footer from '../Components/Footer'
 import styles from './intMent.module.css'
