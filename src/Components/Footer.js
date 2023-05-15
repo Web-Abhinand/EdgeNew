@@ -20,7 +20,7 @@ const Footer = () => {
               <div className={styles.Footer_logo_div} style={{ alignItems: 'center' }}>
                 <img src={logo} alt="logo amrita edge" />
               </div>
-              <p style={{ paddingBottom: '10px', textAlign: 'justify',width:'95%'}}>Our skill development and outreach programs to support school, college students are offered jointly by reputed national and international faculty and eminent bureaucrats, which will help students to equip and expose them to address real-life applications.</p>
+              <p style={{ paddingBottom: '10px', textAlign: 'left',width:'95%'}}>Our skill development and outreach programs to support school, college students are offered jointly by reputed national and international faculty and eminent bureaucrats, which will help students to equip and expose them to address real-life applications.</p>
             </div>
           </Grid>
           <Grid item xs={12} md={6} lg={6} xl={4}>

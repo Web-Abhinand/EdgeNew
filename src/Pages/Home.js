@@ -100,7 +100,7 @@ const Home = () => {
                             <div className={styles.Swiper_Slide}>
                                 <div className="title" data-swiper-parallax="-300">
                                     <div>
-                                        <h2 style={{ fontFamily: 'Montserrat' }}>What do our leaner's have to say</h2>
+                                        <h2 style={{ fontFamily: 'Montserrat' }}>What do our learner's have to say</h2>
                                     </div>
                                     <div className={styles.slide_image_div}>
                                         <img src={Avatar} style={{ height: "100px", width: '100px', padding: '1rem' }} alt='avatar'></img>
@@ -127,7 +127,7 @@ const Home = () => {
                             <div className={styles.Swiper_Slide}>
                                 <div className="subtitle" data-swiper-parallax="-200">
                                     <div>
-                                        <h2 style={{ fontFamily: 'Montserrat' }}>What do our leaner's have to say</h2>
+                                        <h2 style={{ fontFamily: 'Montserrat' }}>What do our learner's have to say</h2>
                                     </div>
                                     <div className={styles.slide_image_div}>
                                         <img src={Avatar2} style={{ height: "100px", width: '100px', padding: '1rem' }} alt='avatar'></img>
@@ -155,7 +155,7 @@ const Home = () => {
                             <div className={styles.Swiper_Slide}>
                                 <div className="subtitle" data-swiper-parallax="-200">
                                     <div>
-                                        <h2 style={{ fontFamily: 'Montserrat' }}>What do our leaner's have to say</h2>
+                                        <h2 style={{ fontFamily: 'Montserrat' }}>What do our learner's have to say</h2>
                                     </div>
                                     <div className={styles.slide_image_div}>
                                         <img src={Avatar3} style={{ height: "100px", width: '100px', padding: '1rem' }} alt='avatar'></img>
