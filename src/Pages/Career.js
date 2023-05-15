@@ -4,9 +4,36 @@ import Header from '../Components/Header'
 import '../Pages/Career.modules.css'
 import career from '../Assets/career.gif'
 
+
 import { useEffect  } from 'react'
 const Career = () => {
+
+  function guardarArchivo(e) {
+    var file = e.target.files[0] //the file
+    var reader = new FileReader() //this for convert to Base64 
+    reader.readAsDataURL(e.target.files[0]) //start conversion...
+    reader.onload = function (e) { //.. once finished..
+      var rawLog = reader.result.split(',')[1]; //extract only thee file data part
+      var dataSend = { dataReq: { data: rawLog, name: file.name, type: file.type }, fname: "uploadFilesToGoogleDrive" }; //preapre info to send to API
+      fetch('https://script.google.com/macros/s/AKfycbxQn8H26EEFi-Fdh94-V9nn6zzTxFfihyJTQsHpzq_smIutYhTEfmdEXCgrbm0aKP9g/exec', //your AppsScript URL
+        { method: "POST", body: JSON.stringify(dataSend) }) //send to Api
+        .then(res => res.json()).then((a) => {
+          console.log(a) //See response
+        }).catch(e => console.log(e)) // Or Error in console
+    }
+    setIsFileUploaded(true);
+  }
+
+
+
+
+
     const [show, setShow] = useState(false);
+    const [isApplyClicked, setIsApplyClicked] = useState(false);
+    const [isFileUploaded, setIsFileUploaded] = useState(false);
+        const handleApplyClick=()=> {
+      setIsApplyClicked(true);
+    }
     const handleClick = () => {
       setShow(true);
     }
@@ -77,7 +104,21 @@ methods (offline & online).</p>
 
                                <br></br><p style={{ textAlign:'center'}}  >Please Contact 9747030712 for any clarification.</p>
                                
-                               <button variant="contained" className='view_button' onClick={handleClick}>Apply </button>
+                              
+                               <button variant="contained" className='view_button' onClick={handleApplyClick}>Apply</button>
+                               {isApplyClicked && (
+        <div>
+          <input
+            type="file"
+            accept="application/pdf"
+            id="customFile"
+            onChange={(e) => guardarArchivo(e)}
+          />
+          {isFileUploaded && <span>&#10004; File uploaded</span>}
+        </div>
+      )}
+                                
+                                 
                                 <div style={{ textAlign: 'center', marginTop: '1em' }}>
 
                         <button variant="contained" className='view_button' onClick={handleClick2}>Show less</button>
@@ -89,6 +130,9 @@ methods (offline & online).</p>
 : null}
 <div style={{ textAlign: 'left', marginTop: '1em' }}>
                     {show ? null :   <button variant="contained" className='view_button' onClick={handleClick}>View More</button>}
+                    
+                  
+
                         
                     </div>
                     </div>
