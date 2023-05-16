@@ -6,7 +6,7 @@ import Amma from '../Assets/Mata-Amritanandamayi.png'
 import College from '../Assets/amrita_college.jpg'
 import { useState } from 'react'
 import { useEffect } from 'react'
-import { Link } from 'react-router-dom'
+
 const About = () => {
   useEffect(() => {
     window.scroll(0, 0);

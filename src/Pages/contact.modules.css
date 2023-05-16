@@ -32,6 +32,8 @@ h5{
 }
 .contact__form{
     display: flex;
+    padding-top: 13px;
+   
 }
 .enquiry__form{
     display: flex;
@@ -102,3 +104,14 @@ h5{
     opacity: .8;
     border: 1px solid #BC631c;
 }
+@media screen and (max-width :768px){
+    .contact__info h5{
+        font-size: 15px;
+
+    }
+    .gif{
+        display: none;
+    }
+    
+}
+ 
