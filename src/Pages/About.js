@@ -56,7 +56,7 @@ const About = () => {
         <section className={styles.about_Amrita_VishwaVidyapeetham}>
       <div className={styles.aboutOurInspirationHeading}>
         </div>
-        <div className={styles.aboutOurInspiration_flex} style={{paddingBottom:'1rem'}}>
+        <div className={styles.aboutOurInspiration_flex} style={{paddingBottom:'1rem',alignItems:'center'}}>
           <div className={styles.aboutOurInspiration_flex_right} >
             <h1 className='text-3xl font-medium' style={{color:'#C20B4D',fontFamily:'Montserrat',textTransform:'uppercase'}}>Amrita Vishwa Vidyapeetham</h1>
               <p style={{ fontSize: '1.1rem', width: '100%', opacity: '0.8',textAlign:'justify'}} data-aos="fade-up">
@@ -73,7 +73,7 @@ const About = () => {
               </p>
           </div>
           <div className={styles.aboutOurInspiration_flex_left2} data-aos="fade-up">
-            <img src={College} alt='amrita vishwa vidyapeetham' style={{borderRadius:'10px'}}></img>
+            <img src={College} alt='amrita vishwa vidyapeetham' style={{borderRadius:'10px',minHeight:'300px',objectFit:'cover'}}></img>
           </div>
         </div>
         </section>
