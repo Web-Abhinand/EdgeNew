@@ -31,14 +31,24 @@ const Career = () => {
     const [show, setShow] = useState(false);
     const [isApplyClicked, setIsApplyClicked] = useState(false);
     const [isFileUploaded, setIsFileUploaded] = useState(false);
+    const[showApply,setShowApply]=useState(true);
         const handleApplyClick=()=> {
       setIsApplyClicked(true);
+      setShowApply(false);
     }
+
+    
     const handleClick = () => {
       setShow(true);
+      setShowApply(false);
+      setIsApplyClicked(false);
+      
+      
     }
     const handleClick2 = () => {
       setShow(false);
+      setShowApply(true);
+      
     }
 
     useEffect(() => {
@@ -69,8 +79,8 @@ methods (offline & online).</p>
                               show ? 
                            
                            <>
-                           <div className='viewmore_para'>
-                            <p className='v__head'>Job Description</p>
+                           <div className='viewmore_para' style={{ textAlign:'left'}} >
+                            {/* <p className='v__head'>Job Description</p> */}
                             <p className='v__subhead'>Subjects:</p>
                             <ul className='v__ul'>
                                 <li>Mathematics</li>
@@ -105,7 +115,7 @@ methods (offline & online).</p>
                                <br></br><p style={{ textAlign:'center'}}  >Please Contact 9747030712 for any clarification.</p>
                                
                               
-                               <button variant="contained" className='view_button' onClick={handleApplyClick}>Apply</button>
+                               {/* <button variant="contained" className='view_button' onClick={handleApplyClick}>Apply</button>
                                {isApplyClicked && (
         <div>
           <input
@@ -116,25 +126,40 @@ methods (offline & online).</p>
           />
           {isFileUploaded && <span>&#10004; File uploaded</span>}
         </div>
-      )}
+      )} */}
                                 
                                  
                                 <div style={{ textAlign: 'center', marginTop: '1em' }}>
 
-                        <button variant="contained" className='view_button' onClick={handleClick2}>Show less</button>
+                        <button variant="contained" className='view_button1' onClick={handleClick2}>Show less</button>
                         
                     </div>
                                 </div>
                            </>
 
 : null}
+<div className='view_apply_btn' >
 <div style={{ textAlign: 'left', marginTop: '1em' }}>
                     {show ? null :   <button variant="contained" className='view_button' onClick={handleClick}>View More</button>}
-                    
-                  
-
-                        
-                    </div>
+                  </div>
+                 <div className='apply_'> {showApply ?     <button variant="contained" className='view_button2' onClick={handleApplyClick}>Apply</button>: null}
+                            {isApplyClicked && (
+                              
+        <div className='choose' >
+         
+         <label >Upload your Resume</label>
+         <input
+            type="file"
+            accept="application/pdf"
+            id="customFile" 
+            onChange={(e) => guardarArchivo(e)}
+          />
+          
+          {isFileUploaded && <span id='tick'>&#10004; File uploaded</span>}
+        </div>
+      )}
+      </div>
+      </div>
                     </div>
                     </div>
                     <div className='career__2'>
