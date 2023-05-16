@@ -87,8 +87,8 @@ const Header = () => {
 
   const headerStyle = {
     textAlign: 'center',
-    transition: 'transform 0.3s',
-    display: visible ? 'block' : 'none',
+    transition: 'transform 1s ease-in-out',
+    transform: visible ? 'translateY(0)' : 'translateY(-100%)',
   };
   return (
     <>
