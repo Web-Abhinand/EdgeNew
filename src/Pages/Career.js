@@ -66,29 +66,37 @@ const Career = () => {
                     <div className='heading'>
                         <h3>AMRITA EDGE JUNIOR FACULTY RECRUITMENT</h3>
                         <p style={{ marginTop :"2vh"}}>
-Amrita Edge is an initiative of Amrita Vishwa Vidyapeetham to support and facilitate students with skill
-development programs. Amrita Edge offers active outreach programs to support school students to
-identify and nurture their interests and skills. We are currently looking for a friendly and competent teacher to join our team. If you are a
-compassionate and self-motivated individual with a specific interest in education, we urge you to apply!
-In this position, you will be responsible for supervising students, developing lesson plans, preparing
-lesson material, and coaching students for competitive exams. The successful candidate must enjoy working with children and be devoted to building a nurturing and
-safe learning environment. To excel in this role, you must demonstrate excellent written and verbal
-communication skills, as well as in-depth knowledge of subject, classroom activities and teaching
-methods (offline & online).</p>
-{
-                              show ? 
-                           
-                           <>
-                           <div className='viewmore_para' style={{ textAlign:'left'}} >
-                            {/* <p className='v__head'>Job Description</p> */}
-                            <p className='v__subhead'>Subjects:</p>
+                        Amrita Edge is an initiative of Amrita Vishwa Vidyapeetham to support and facilitate students with skill development programs.
+                         Amrita Edge offers active outreach programs to support school students to identify and nurture their interests and skills.
+                          We are currently looking for a friendly and competent teacher to join our team.
+                           If you are a compassionate and self-motivated individual with a specific interest in education, we urge you to apply!.</p>
+                           <p className='v__subhead_s' style={{color:'#C40B4D'}}>Faculties Recruited For:</p>
                             <ul className='v__ul'>
                                 <li>Mathematics</li>
                                 <li>Physics</li>
                                 <li>Chemistry</li>
                                 <li>Biology</li>
                             </ul>
-                            <p className='v__subhead'>Responsibilities:</p>
+{
+                              show ? 
+                           
+                           <>
+                           <div className='viewmore_para' style={{ textAlign:'left'}} >
+                            <p className='v__head'>Job Description</p>
+                            
+                            <p className='v__subhead'> Job-Description</p>
+                            <ul className='v__ul' >
+                              <li>Responsible for supervising students , developing lession plans,
+                                preparing lesson material’s and coaching students for competitive exams .</li>
+                              <li>Work with students and be devoted to building a nurturing and safe learning environment .</li>
+                              <li> Researching learning strategies .</li>
+                              <li>Maintain a tidy and orderly classroom.</li>
+                              <li>Observe and understand students behaviour and psyche and report suspicious of neglect , abuse etc.</li>
+                              <li>Assess and record students progress and provide grades and feedback.</li>
+                              <li>Provide individualised instructions to each students by promoting interactive learning .</li>
+                            </ul>
+
+                            <p className='v__subhead'> Job-Responsibilities</p>
                             <ul className='v__ul' >
                                 <li>Handle entrance oriented classes from grade 7 to grade 1</li>
                                 <li>Entrance oriented Study material development</li>
@@ -101,7 +109,7 @@ methods (offline & online).</p>
                                 <li>Attend all training classes, parent conferences, and faculty meetings.</li>
                                 
                                 </ul>
-                                <p className='v__subhead'>Requirements:</p>
+                                <p className='v__subhead'>Skill Required</p>
                                 <ul className='v__ul'>
                                 <li>M.Sc. degree</li>
                                 <li>0 to 2 years’ experience as a teacher or similar role.</li>

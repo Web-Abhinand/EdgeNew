@@ -92,13 +92,20 @@ li{
     margin-top: 5px;
     color: #C40B4D;
 }
+.v__subhead_s{
+    font-size: 20px;
+    font-weight: 500;
+    
+    margin-top: 5px;
+    
 
+}
 
 .v__subhead{
     font-size: 20px;
     font-weight: 500;
     margin-left: 20%;
-    margin-top: 5px;
+    margin-top: 15px;
 }
 .upload_btn{
     color:rgb(0, 0, 0);
