@@ -6,6 +6,7 @@ import Avatar from '../Assets/Amish Santhosh        IAS 1 1.png'
 import Avatar2 from '../Assets/Aavani Prasad      IAS 1.png'
 import Avatar3 from '../Assets/Slice 1 1.png'
 import HowHelp from '../Assets/amrita_college.jpg'
+import POP from '../Assets/Screenshot_1.png'
 import './styles.css';
 
 // import { useRef } from "react";
@@ -19,16 +20,47 @@ import "swiper/css/navigation";
 import { useEffect } from 'react'
 import { Link } from 'react-router-dom'
 // import required modules
+import Modal from '@mui/material/Modal';
+import Box from '@mui/material/Box';
 import { Autoplay, Pagination, Parallax } from 'swiper';
 import Aos from 'aos'
 import 'aos/dist/aos.css';
+import { minWidth } from '@mui/system'
 const Home = () => {
     useEffect(() => {
         window.scroll(0, 0);
         Aos.init({ duration: 1500 });
+        handleOpen();
     }, []);
+    const [open, setOpen] = React.useState(false);
+    const handleOpen = () => setOpen(true);
+    const handleClose = () => setOpen(false);
+
+    const style = {
+        position: 'absolute',
+        top: '50%',
+        left: '50%',
+        transform: 'translate(-50%, -50%)',
+        bgcolor: 'background.paper',
+        boxShadow: 24,
+        outline:'none',
+        minWidth:"300px"
+      };
+
     return (
         <>
+        <Modal
+          open={open}
+          onClose={handleClose}
+          aria-labelledby="modal-modal-title"
+          aria-describedby="modal-modal-description"
+          >
+                <Box sx={style}>
+                    <img src={POP} alt="popupprice"  style={{border:'1px solid white'}}/>
+                </Box>
+    
+          </Modal>
+
             <Header />
             <div className={styles.heroSection}>
                 <div className={styles.heroSectionSvg}>
