@@ -92,7 +92,7 @@ const Home = () => {
         },
         {
             id: '7',
-            message: 'For more information contact us at 1234567890',
+            message: 'For more information contact us at 9747030712, 9567979111',
             trigger: 'close',
         },
         {
@@ -280,7 +280,7 @@ const Home = () => {
                     </Swiper>
                 </div>
             </section>
-            <div style={{ position: 'fixed', top: '20%', right: '10%',backgroundColor:'white',zIndex:'100'}}>
+            <div style={{ position: 'fixed', top: '20%', right: '10%',backgroundColor:'white',zIndex:'100',borderRadius:'12px'}}>
                 {showChatbot ? (
                     <ChatBot steps={steps} />
                 ) : (

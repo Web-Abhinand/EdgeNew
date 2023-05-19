@@ -31,7 +31,7 @@ const Footer = () => {
                 </div>
                 <div style={{ width: '85%' }}>
                   <p style={{
-                    overflowWrap: 'break-word', paddingLeft: '5px'
+                    overflowWrap: 'break-word', paddingLeft: '5px',textAlign:'left'
                   }}>Amrita Vishwa Vidyapeetham,Amritapuri, Clappana PO,Kollam - 690525, Kerala, India</p>
                 </div>
               </div>
