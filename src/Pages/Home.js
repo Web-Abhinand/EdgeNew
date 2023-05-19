@@ -284,7 +284,7 @@ const Home = () => {
                 {showChatbot ? (
                     <ChatBot steps={steps} />
                 ) : (
-                    <div style={{ position: 'fixed', bottom: '2%', right: '12%' }}>
+                    <div style={{ position: 'fixed', bottom: '2%', right: '12%',zIndex:'1000'}}>
                         <button onClick={handleChatbot} style={{ width: '100px', height: '100px' }}>
                             <img src={chatbot}></img>
                         </button>
