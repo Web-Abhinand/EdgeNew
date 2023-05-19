@@ -7,8 +7,9 @@ import Avatar2 from '../Assets/Aavani Prasad      IAS 1.png'
 import Avatar3 from '../Assets/Slice 1 1.png'
 import HowHelp from '../Assets/amrita_college.jpg'
 import POP from '../Assets/Screenshot_1.png'
+import chatbot from '../Assets/chatbot.svg'
 import './styles.css';
-
+import { useState } from 'react'
 // import { useRef } from "react";
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -25,13 +26,15 @@ import Box from '@mui/material/Box';
 import { Autoplay, Pagination, Parallax } from 'swiper';
 import Aos from 'aos'
 import 'aos/dist/aos.css';
-import { minWidth } from '@mui/system'
+import ChatBot from 'react-simple-chatbot';
+
 const Home = () => {
     useEffect(() => {
         window.scroll(0, 0);
         Aos.init({ duration: 1500 });
         handleOpen();
     }, []);
+    const [showChatbot, setShowChatbot] = useState(false);
     const [open, setOpen] = React.useState(false);
     const handleOpen = () => setOpen(true);
     const handleClose = () => setOpen(false);
@@ -43,25 +46,92 @@ const Home = () => {
         transform: 'translate(-50%, -50%)',
         bgcolor: 'background.paper',
         boxShadow: 24,
-        outline:'none',
-        minWidth:"300px"
-      };
+        outline: 'none',
+        minWidth: "300px"
+    };
+
+    const CloseButton = () => (
+        <button onClick={handleCloseChatBox} >
+            Close
+        </button>
+    );
+
+    const steps = [
+        {
+            id: '1',
+            message: 'What is your name?',
+            trigger: '2',
+        },
+        {
+            id: '2',
+            user: true,
+            trigger: '3',
+        },
+        {
+            id: '3',
+            message: 'Hi {previousValue}, nice to meet you!',
+            trigger: '4'
+        },
+        {
+            id: '4',
+            message: 'Which course are you interested in?',
+            trigger: '5',
+        },
+        {
+            id: '5',
+            options: [
+                { value: 1, label: 'Amrita Edge Pre-Nurture Foundation Program', trigger: '6' },
+                { value: 2, label: 'Amrit Edge Science & Career Foundation Program', trigger: '6' },
+                { value: 3, label: 'Neet Crash Program', trigger: '6' },
+            ],
+        },
+        {
+            id: '6',
+            message: 'excellent choice!',
+            trigger: '7',
+        },
+        {
+            id: '7',
+            message: 'For more information contact us at 1234567890',
+            trigger: 'close',
+        },
+        {
+            id: 'close',
+            component: <CloseButton />,
+            asMessage: false,
+            end: true,
+        }
+    ]
+
+    function handleChatbot() {
+        setShowChatbot(!showChatbot);
+    }
+    function handleCloseChatBox() {
+        setShowChatbot(false);
+    }
+
+
 
     return (
         <>
-        <Modal
-          open={open}
-          onClose={handleClose}
-          aria-labelledby="modal-modal-title"
-          aria-describedby="modal-modal-description"
-          >
+            <Modal
+                open={open}
+                onClose={handleClose}
+                aria-labelledby="modal-modal-title"
+                aria-describedby="modal-modal-description"
+            >
                 <Box sx={style}>
-                    <img src={POP} alt="popupprice"  style={{border:'1px solid white'}}/>
+                    <img src={POP} alt="popupprice" style={{ border: '1px solid white' }} />
                 </Box>
-    
-          </Modal>
+
+            </Modal>
+
+
 
             <Header />
+
+
+
             <div className={styles.heroSection}>
                 <div className={styles.heroSectionSvg}>
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 250">
@@ -139,11 +209,11 @@ const Home = () => {
                                     </div>
                                     <div>
                                         <h2 style={{ fontFamily: 'Montserrat' }}>Amish Santhosh</h2>
-                                        <p style={{ fontFamily: 'Montserrat', fontSize: '1rem', fontWeight: '400', marginBottom: '1rem',textAlign:'center' }}>Foundation 2021-22 batch</p>
+                                        <p style={{ fontFamily: 'Montserrat', fontSize: '1rem', fontWeight: '400', marginBottom: '1rem', textAlign: 'center' }}>Foundation 2021-22 batch</p>
                                     </div>
                                 </div>
                                 <div className="text" data-swiper-parallax="-100">
-                                    <p style={{ fontFamily: 'Montserrat', opacity: '0.7',textAlign:'center'}}>
+                                    <p style={{ fontFamily: 'Montserrat', opacity: '0.7', textAlign: 'center' }}>
                                         "Hi,
                                         I am Amish Santhosh son of Santhosh P.K and Resitha Santhosh I am currently in Qatar along with my
                                         parents. I am studying in MES Indian school in 9th std
@@ -166,12 +236,12 @@ const Home = () => {
                                     </div>
                                     <div>
                                         <h2 style={{ fontFamily: 'Montserrat' }}>Aavani Prasad</h2>
-                                        <p style={{ fontFamily: 'Montserrat', fontSize: '1rem', fontWeight: '400', marginBottom: '1rem' ,textAlign:'center'}}>Wisdom 360, 2022-23
+                                        <p style={{ fontFamily: 'Montserrat', fontSize: '1rem', fontWeight: '400', marginBottom: '1rem', textAlign: 'center' }}>Wisdom 360, 2022-23
                                         </p>
                                     </div>
                                 </div>
                                 <div className="text" data-swiper-parallax="-100">
-                                    <p style={{ fontFamily: 'Montserrat', opacity: '0.7',textAlign:'center'}}>
+                                    <p style={{ fontFamily: 'Montserrat', opacity: '0.7', textAlign: 'center' }}>
                                         "Myself Aavani Prasad from Amrita Vidyalayam Perumbavoor.
                                         I am studying in Xth std. I have been attending this course since 2021.My aim in life is to become an IAS
                                         officer. That's why I joined in this course. I think it is the best platform to achieve my goal. I really
@@ -192,12 +262,12 @@ const Home = () => {
                                     <div className={styles.slide_image_div}>
                                         <img src={Avatar3} style={{ height: "100px", width: '100px', padding: '1rem' }} alt='avatar'></img>
                                         <h2 style={{ fontFamily: 'Montserrat' }}>Arundhathi Krishna V R</h2>
-                                        <p style={{ fontFamily: 'Montserrat', fontSize: '1rem', fontWeight: '400', marginBottom: '1rem' ,textAlign:'center'}}>SF9 A V, Koyilandy
+                                        <p style={{ fontFamily: 'Montserrat', fontSize: '1rem', fontWeight: '400', marginBottom: '1rem', textAlign: 'center' }}>SF9 A V, Koyilandy
                                         </p>
                                     </div>
                                 </div>
                                 <div className="text" data-swiper-parallax="-100">
-                                    <p style={{ fontFamily: 'Montserrat', opacity: '0.7',textAlign:'center'}}>
+                                    <p style={{ fontFamily: 'Montserrat', opacity: '0.7', textAlign: 'center' }}>
                                         "Being a student who has been through this journey from the very start, I can gladly tell that the
                                         initiative has aided in both my academic and overall performance. Faculties were always pleased to
                                         quench my thirst for deeper and vast understanding. Taking concepts beforehand, in a clear and
@@ -210,6 +280,17 @@ const Home = () => {
                     </Swiper>
                 </div>
             </section>
+            <div style={{ position: 'fixed', top: '20%', right: '10%' }}>
+                {showChatbot ? (
+                    <ChatBot steps={steps} />
+                ) : (
+                    <div style={{ position: 'fixed', bottom: '2%', right: '12%' }}>
+                        <button onClick={handleChatbot} style={{ width: '100px', height: '100px' }}>
+                            <img src={chatbot}></img>
+                        </button>
+                    </div>
+                )}
+            </div>
             <Footer />
         </>
     )
