@@ -280,12 +280,12 @@ const Home = () => {
                     </Swiper>
                 </div>
             </section>
-            <div style={{ position: 'fixed', top: '20%', right: '10%' }}>
+            <div style={{ position: 'fixed', top: '20%', right: '10%',backgroundColor:'white',zIndex:'100'}}>
                 {showChatbot ? (
                     <ChatBot steps={steps} />
                 ) : (
-                    <div style={{ position: 'fixed', bottom: '2%', right: '12%',zIndex:'1000'}}>
-                        <button onClick={handleChatbot} style={{ width: '100px', height: '100px' }}>
+                    <div style={{ position: 'fixed', bottom: '2%', right: '12%',zIndex:'100'}}>
+                        <button onClick={handleChatbot} style={{ width: '80px', height: '80px' }}>
                             <img src={chatbot}></img>
                         </button>
                     </div>
