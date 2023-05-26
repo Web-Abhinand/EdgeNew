@@ -6,7 +6,7 @@ import Avatar from '../Assets/Amish Santhosh        IAS 1 1.png'
 import Avatar2 from '../Assets/Aavani Prasad      IAS 1.png'
 import Avatar3 from '../Assets/Slice 1 1.png'
 import HowHelp from '../Assets/amrita_college.jpg'
-import POP from '../Assets/Screenshot_1.png'
+import POP from '../Assets/popup.jpeg'
 import chatbot from '../Assets/chatbot.svg'
 import './styles.css';
 import { useState } from 'react'
@@ -121,7 +121,7 @@ const Home = () => {
                 aria-describedby="modal-modal-description"
             >
                 <Box sx={style}>
-                    <img src={POP} alt="popupprice" style={{ border: '1px solid white' }} />
+                    <img src={POP} alt="popupprice" style={{width:'300px',objectFit:'contain'}} />
                 </Box>
 
             </Modal>
