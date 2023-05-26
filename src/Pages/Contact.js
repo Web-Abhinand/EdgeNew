@@ -19,6 +19,7 @@ const Contact = () => {
   const[parent_name,setParent_name]=useState('');
   const[parent_phone_no,setParent_phone_no]=useState('');
   const[parent_email,setParent_email]=useState('');
+  const[submitclicked,setSubmitclicked]=useState(false);
   
   //submit event handler
   const handleSubmit=(e)=>{
@@ -54,7 +55,7 @@ setTown('');
 setParent_name('');
 setParent_phone_no('');
 setParent_email('');
-
+setSubmitclicked(true);
   })
   
   }
@@ -160,6 +161,7 @@ setParent_email('');
                            <button className="btn col">Submit <i className="fa fa-thumbs-o-up"
                                        ></i>
                                     </button>
+                                    {submitclicked && <span id='tick'>&#10004; </span>}
                             </div>
                              </form>
           </div>
