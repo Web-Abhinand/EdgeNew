@@ -183,6 +183,20 @@
     width: 100%;
     border-radius: 10px;
 }
+.chatbot{
+    position: fixed;
+    top: 20%;
+    right: 10%;
+    background-color: white;
+    z-index: 100;
+    border-radius: 12px;
+}
+.chatbot_icon{
+    position: fixed;
+    bottom: 2%;
+    right: 12%;
+    z-index: 100;
+}
 /* write the media query */
 /* media query for medium and small laptops */
 
@@ -225,6 +239,14 @@
         width: 100%;
         border-radius: 10px;
     }
+    .chatbot{
+        position: fixed;
+        top: 10%;
+        right: 10%;
+        background-color: white;
+        z-index: 100;
+        border-radius: 12px;
+    }
   }
 
 
@@ -253,6 +275,14 @@
     }
     .how_Amrita_edge_helps_you_right_div img{
         width: 100%;
+    }
+    .chatbot{
+        position: fixed;
+        top: 10%;
+        right: 10%;
+        background-color: white;
+        z-index: 100;
+        border-radius: 12px;
     }
 }
 @media screen and (max-width: 571px){

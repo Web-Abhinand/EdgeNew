@@ -13,7 +13,6 @@ import { useState } from 'react'
 // import { useRef } from "react";
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
-
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/pagination";
@@ -27,7 +26,6 @@ import { Autoplay, Pagination, Parallax } from 'swiper';
 import Aos from 'aos'
 import 'aos/dist/aos.css';
 import ChatBot from 'react-simple-chatbot';
-
 const Home = () => {
     useEffect(() => {
         window.scroll(0, 0);
@@ -38,7 +36,6 @@ const Home = () => {
     const [open, setOpen] = React.useState(false);
     const handleOpen = () => setOpen(true);
     const handleClose = () => setOpen(false);
-
     const style = {
         position: 'absolute',
         top: '50%',
@@ -49,13 +46,11 @@ const Home = () => {
         outline: 'none',
         minWidth: "300px"
     };
-
     const CloseButton = () => (
         <button onClick={handleCloseChatBox} >
             Close
         </button>
     );
-
     const steps = [
         {
             id: '1',
@@ -102,16 +97,12 @@ const Home = () => {
             end: true,
         }
     ]
-
     function handleChatbot() {
         setShowChatbot(!showChatbot);
     }
     function handleCloseChatBox() {
         setShowChatbot(false);
     }
-
-
-
     return (
         <>
             <Modal
@@ -123,15 +114,8 @@ const Home = () => {
                 <Box sx={style}>
                     <img src={POP} alt="popupprice" style={{width:'300px',objectFit:'contain'}} />
                 </Box>
-
             </Modal>
-
-
-
             <Header />
-
-
-
             <div className={styles.heroSection}>
                 <div className={styles.heroSectionSvg}>
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 250">
@@ -280,11 +264,11 @@ const Home = () => {
                     </Swiper>
                 </div>
             </section>
-            <div style={{ position: 'fixed', top: '20%', right: '10%',backgroundColor:'white',zIndex:'100',borderRadius:'12px'}}>
+            <div className={styles.chatbot}>
                 {showChatbot ? (
                     <ChatBot steps={steps} />
                 ) : (
-                    <div style={{ position: 'fixed', bottom: '2%', right: '12%',zIndex:'100'}}>
+                    <div className={styles.chatbot_icon} >
                         <button onClick={handleChatbot} style={{ width: '80px', height: '80px' }}>
                             <img src={chatbot}></img>
                         </button>
