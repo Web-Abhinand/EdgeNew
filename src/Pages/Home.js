@@ -44,7 +44,7 @@ const Home = () => {
         bgcolor: 'background.paper',
         boxShadow: 24,
         outline: 'none',
-        minWidth: "300px"
+        minWidth: "200px"
     };
     const CloseButton = () => (
         <button onClick={handleCloseChatBox} >
@@ -112,7 +112,7 @@ const Home = () => {
                 aria-describedby="modal-modal-description"
             >
                 <Box sx={style}>
-                    <img src={POP} alt="popupprice" style={{width:'300px',objectFit:'contain'}} />
+                    <img src={POP} alt="popupprice" className={styles.popup}  />
                 </Box>
             </Modal>
             <Header />

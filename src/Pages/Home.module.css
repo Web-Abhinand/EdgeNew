@@ -197,6 +197,11 @@
     right: 8%;
     z-index: 100;
 }
+
+.popup{
+    width: 300px;
+    object-fit: contain;
+}
 /* write the media query */
 /* media query for medium and small laptops */
 
@@ -247,6 +252,10 @@
         z-index: 100;
         border-radius: 12px;
     }
+    .popup{
+        width: 250px;
+        object-fit: contain;
+    }
   }
 
 @media screen and (max-width: 768px){
@@ -288,6 +297,11 @@
         bottom: 2%;
         right: 8%;
         z-index: 100;
+    }
+    .popup{
+        width: 290px;
+        height: auto;
+        object-fit: cover;
     }
 }
 @media screen and (max-width: 571px){
