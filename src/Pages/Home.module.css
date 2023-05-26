@@ -194,7 +194,7 @@
 .chatbot_icon{
     position: fixed;
     bottom: 2%;
-    right: 12%;
+    right: 8%;
     z-index: 100;
 }
 /* write the media query */
@@ -241,14 +241,13 @@
     }
     .chatbot{
         position: fixed;
-        top: 10%;
+        top: 12%;
         right: 10%;
         background-color: white;
         z-index: 100;
         border-radius: 12px;
     }
   }
-
 
 @media screen and (max-width: 768px){
     .heroText h1{
@@ -278,11 +277,17 @@
     }
     .chatbot{
         position: fixed;
-        top: 10%;
+        top: 8%;
         right: 10%;
         background-color: white;
         z-index: 100;
         border-radius: 12px;
+    }
+    .chatbot_icon{
+        position: fixed;
+        bottom: 2%;
+        right: 8%;
+        z-index: 100;
     }
 }
 @media screen and (max-width: 571px){

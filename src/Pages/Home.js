@@ -7,7 +7,7 @@ import Avatar2 from '../Assets/Aavani Prasad      IAS 1.png'
 import Avatar3 from '../Assets/Slice 1 1.png'
 import HowHelp from '../Assets/amrita_college.jpg'
 import POP from '../Assets/popup.jpeg'
-import chatbot from '../Assets/chatbot.svg'
+import chatbot from '../Assets/chat-typing.svg'
 import './styles.css';
 import { useState } from 'react'
 // import { useRef } from "react";
@@ -269,7 +269,7 @@ const Home = () => {
                     <ChatBot steps={steps} />
                 ) : (
                     <div className={styles.chatbot_icon} >
-                        <button onClick={handleChatbot} style={{ width: '80px', height: '80px' }}>
+                        <button onClick={handleChatbot} style={{ width: '50px', height: '50px' }}>
                             <img src={chatbot}></img>
                         </button>
                     </div>
