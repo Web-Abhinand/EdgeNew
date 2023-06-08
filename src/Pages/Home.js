@@ -51,10 +51,16 @@ const Home = () => {
             Close
         </button>
     );
+
+    const ContactUsLink = () => (
+        <Link to="/contact">Contact Us</Link>
+    );
+
     const steps = [
         {
             id: '1',
-            message: 'What is your name?',
+            message: 'Welcome to Amrita Edge! \n',
+            message:" What a wonderful day it is! Hope you're doing well too. May I know your name?",
             trigger: '2',
         },
         {
@@ -69,27 +75,35 @@ const Home = () => {
         },
         {
             id: '4',
-            message: 'Which course are you interested in?',
+            message: ' Which of the following courses that we offer are you particularly interested in?',
             trigger: '5',
         },
         {
             id: '5',
             options: [
-                { value: 1, label: 'Amrita Edge Pre-Nurture Foundation Program', trigger: '6' },
-                { value: 2, label: 'Amrit Edge Science & Career Foundation Program', trigger: '6' },
-                { value: 3, label: 'Neet Crash Program', trigger: '6' },
+                { value: 1, label: '•	NEET Repeater Program.', trigger: '6' },
+                { value: 2, label: '•	Science Foundation Program. ', trigger: '6' },
+                { value: 3, label: '•	NEET / JEE coaching.', trigger: '6' },
+                { value: 4, label: '•	Math’s Tuition. ', trigger: '6' },
+                { value: 5, label: '•	Skill Development Programs', trigger: '6' }
             ],
         },
         {
             id: '6',
-            message: 'excellent choice!',
+            message: 'excellent choice! \n',
             trigger: '7',
         },
         {
             id: '7',
-            message: 'For more information contact us at 9747030712, 9567979111',
-            trigger: 'close',
+            message: 'Please drop in your contact number / Mail id, in our contact us page, so that we can get back to you as soon as possible. \n',
+            trigger: 'contactLink',
         },
+        {
+            id: 'contactLink',
+            component: <ContactUsLink />,
+            asMessage: false,
+            replace: true,
+          },
         {
             id: 'close',
             component: <CloseButton />,
