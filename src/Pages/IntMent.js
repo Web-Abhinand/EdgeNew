@@ -14,7 +14,7 @@ function IntMent() {
     <>
         <Header />
         <div className={styles.main_neet_rep}>
-            <div className={styles.main_neet_rep_flex}>
+            <div className={styles.main_neet_rep_flex} style={{marginTop:'2rem'}}>
                 <div className={styles.main_neet_rep_left_div}>
                     <div className={styles.main_neet_rep_left_div_text}>
                         <h1 className='pt-2 text-4xl font-medium leading-tight text-primary' style={{ color: '#BC631C', fontFamily: 'Source Sans Pro',margin:'0',paddingBottom:'1rem',textAlign:'left'}}>Amrita Integrated Mentors (AIM) Program</h1>

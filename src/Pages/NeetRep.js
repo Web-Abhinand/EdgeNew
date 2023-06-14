@@ -4,7 +4,6 @@ import NeetRepImg from '../Assets/01.jpg'
 import Header from '../Components/Header'
 import Footer from '../Components/Footer'
 import styles from './NeetRep.module.css'
-import Bullet from '../Assets/bullet.png'
 import { useEffect } from 'react'
 function NeetRep() {
     useEffect(() => {
@@ -14,7 +13,7 @@ function NeetRep() {
     <>
         <Header />
         <div className={styles.main_neet_rep}>
-            <div className={styles.main_neet_rep_flex}>
+            <div className={styles.main_neet_rep_flex} style={{paddingTop:'2rem'}}>
                 <div className={styles.main_neet_rep_left_div}>
                     <div className={styles.main_neet_rep_left_div_text}>
                         <h1 className='pt-2 text-4xl font-medium leading-tight text-primary' style={{ color: '#BC631C', fontFamily: 'Source Sans Pro',margin:'0',paddingBottom:'1rem',textAlign:'left'}}>NEET Repeaters Program</h1>
@@ -43,7 +42,9 @@ function NeetRep() {
                 </ul>
             </div>
         </div>
-        <Footer />
+        <div >
+            <Footer />
+        </div>
     </>
   )
 }

@@ -34,7 +34,7 @@ const OurPrograms = () => {
     <>
       <Header />
       <section className={styles.home_card_section}>
-        <h1 className='mb-10 py-2 text-6xl font-medium leading-tight text-primary' style={{ color: '#C20B4D', fontFamily: 'Montserrat' ,marginTop:'3rem'}}>Our Programs</h1>
+        <h1 className='mb-10 py-2 text-5xl font-medium leading-tight text-primary' style={{ color: '#C20B4D', fontFamily: 'Montserrat' ,marginTop:'3rem'}}>Our Programs</h1>
         <div className={styles.home_card_section_flex}>
           <div>
             <Card >

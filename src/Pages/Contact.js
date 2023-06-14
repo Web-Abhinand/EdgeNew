@@ -74,7 +74,7 @@ setSubmitclicked(true);
   return (
     <>
         <Header />
-        <div form='true' className='contact__form' style={{marginTop :"10vh"}}>
+        <div form='true' className='contact__form' style={{marginTop :"10vh",paddingTop:"2rem"}}>
           <div className='gif'>
             <img src={call} alt='gif' />
           </div>
