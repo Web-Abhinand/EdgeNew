@@ -40,7 +40,7 @@ const Header = () => {
       <List>
         <ListItem disablePadding>
           <ListItemButton>
-            <Link to="/about">ABOUT</Link>
+            <Link to="/about" style={{width:'100%'}}>ABOUT</Link>
           </ListItemButton>
         </ListItem>
       </List>
@@ -48,7 +48,7 @@ const Header = () => {
       <List>
         <ListItem disablePadding>
           <ListItemButton>
-            <Link to="/our-programs">OUR PROGRAMS</Link>
+            <Link to="/our-programs" style={{width:'100%'}}>OUR PROGRAMS</Link>
           </ListItemButton>
         </ListItem>
       </List>
@@ -56,7 +56,7 @@ const Header = () => {
       <List>
         <ListItem disablePadding>
           <ListItemButton>
-            <Link to="/Career">CAREER</Link>
+            <Link to="/Career" style={{width:'100%'}}>CAREER</Link>
           </ListItemButton>
         </ListItem>
       </List>
@@ -64,7 +64,7 @@ const Header = () => {
       <List>
         <ListItem disablePadding>
           <ListItemButton>
-            <Link to="/contact">CONTACT</Link>
+            <Link to="/contact" style={{width:'100%'}}>CONTACT</Link>
           </ListItemButton>
         </ListItem>
       </List>
