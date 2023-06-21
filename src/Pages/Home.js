@@ -147,8 +147,8 @@ const Home = () => {
             </div>
             <div className={styles.how_Amrita_edge_helps_you}>
                 <div className={styles.how_Amrita_edge_helps_you_inner_div}>
-                    <div className={styles.how_Amrita_edge_helps_you_left_div} style={{ paddingBottom: '1rem' }}>
-                        <h1 className='mb-2 py-1 text-5xl font-medium leading-tight text-primary' style={{ color: '#C20B4D', fontFamily: 'Montserrat' }} data-aos="fade-up">Amrita Edge</h1>
+                    <div className={styles.how_Amrita_edge_helps_you_left_div} style={{ paddingBottom: '1rem',opacity:'0.8'}}>
+                        <h1 className='mb-2 py-1 text-5xl font-medium leading-tight text-primary' style={{ color: '#C20B4D', fontFamily: 'Montserrat',opacity:'1'}} data-aos="fade-up">Amrita Edge</h1>
                         <p data-aos="fade-up">&emsp;Amrita Edge is an Initiative of Amrita VishwaVidyapeetham which focuses on an all-rounded individualised learning trajectory to enhance and diversify students' career growth pathways while integrating Amrita's philosophy of 'Education for Life and Education for Living'.</p>
                         <p data-aos="fade-up">
                             &emsp;Our skill development and outreach programs to support school, college students are offered jointly by reputed national and international faculty and eminent bureaucrats, which will help students to equip and expose them to address real-life applications.

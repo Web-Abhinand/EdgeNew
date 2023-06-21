@@ -274,6 +274,9 @@
     .how_Amrita_edge_helps_you_left_div{
         flex: 1 1 100%;
     }
+    .how_Amrita_edge_helps_you_left_div h1{
+        opacity: 1 !important;
+    }
     .how_Amrita_edge_helps_you_right_div{
         flex: 1 1 100%;
     }
